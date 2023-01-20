@@ -3,14 +3,12 @@
 
 int main(void)
 {
-    int height,stored,i,j,k ;
+    int height,i,j,k ;
     do
     {
         height = get_int("Height: ");
     }
     while (height < 1 || height > 8);
-    stored = height;
-    printf("Stored: %i\n",stored);
 
     for(i = 1 ; i <= height ; i++)
     {
