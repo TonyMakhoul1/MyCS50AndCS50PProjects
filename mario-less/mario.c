@@ -14,7 +14,8 @@ int main(void)
 
     for( i = 1 ; i <= height ; i++)
     {
-        for( j = 1 ; j <= (height-i))
+        for( j = 1 ; j <= (height-i) ; j++ )
+        
     }
 
 
