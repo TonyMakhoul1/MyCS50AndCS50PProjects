@@ -38,10 +38,10 @@ int main(void)
 int get_cents(void)
 {
     // TODO
-    int n;
+    int cents;
     do
     {
-        n = get_int("cents: ");
+        cents = get_int("cents: ");
     }
     while(cents < 0);
     return cents;
