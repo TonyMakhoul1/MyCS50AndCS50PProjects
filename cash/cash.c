@@ -76,5 +76,5 @@ int calculate_pennies(int cents)
     // TODO
     int p;
     p = cents / 1;
-    return 0;
+    return p;
 }
