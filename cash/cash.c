@@ -66,11 +66,15 @@ int calculate_dimes(int cents)
 int calculate_nickels(int cents)
 {
     // TODO
-    return 0;
+    int n;
+    n = cents / 5;
+    return n;
 }
 
 int calculate_pennies(int cents)
 {
     // TODO
+    int p;
+    p = cents / 1;
     return 0;
 }
