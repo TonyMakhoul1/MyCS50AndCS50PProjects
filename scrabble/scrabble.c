@@ -33,7 +33,7 @@ int compute_score(string word)
         {
             for ( int k = 0; k < POINTS.length; k++ )
             {
-                
+                Alpha[k] = POINTS[k];
             }
         }
     }
