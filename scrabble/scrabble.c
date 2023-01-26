@@ -37,34 +37,34 @@ int compute_score(string word)
 {
     // TODO: Compute and return score for string
     int score = 0;
-  for( int i = 0; i < POINTS.length; i++ )
+  for( int i = 0; i < POINTS[25]; i++ )
   {
-    if ( word[i] = a || word[i] = A || word[i] = e || word[i] = E || word[i] = l || word[i] = L || word[i] = n || word[i] = N || word[i] = o || word[i] = O || word[i] = r || word[i] = R || word[i] = s || word[i] = S || word[i] = t || word[i] = T || word[i] = u || word[i] = U )
+    if ( word[i] == a || word[i] == A || word[i] == e || word[i] == E || word[i] == l || word[i] == L || word[i] == n || word[i] == N || word[i] == o || word[i] == O || word[i] == r || word[i] == R || word[i] == s || word[i] == S || word[i] == t || word[i] == T || word[i] == u || word[i] == U )
     {
         score = 1;
 
     }
-    if ( word[i] = d || word[i] = D || word[i] = g || word[i] = G )
+    if ( word[i] == d || word[i] == D || word[i] == g || word[i] == G )
     {
         score = 2;
     }
-    if ( word[i] = b || word[i] = B || word[i] = c || word[i] = C || word[i] = m || word[i] = M || word[i] = p || word[i] = P )
+    if ( word[i] == b || word[i] == B || word[i] == c || word[i] == C || word[i] == m || word[i] == M || word[i] == p || word[i] == P )
     {
         score = 3;
     }
-    if ( word[i] = f || word[i] = F || word[i] = h || word[i] = H || word[i] = v || word[i] = V || word[i] = w || word[i] = W || word[i] = y || word[i] = Y )
+    if ( word[i] == f || word[i] == F || word[i] == h || word[i] == H || word[i] == v || word[i] == V || word[i] == w || word[i] == W || word[i] == y || word[i] == Y )
     {
         score = 4;
     }
-    if ( word[i] = k || word[i] = K)
+    if ( word[i] == k || word[i] == K)
     {
         score = 5;
     }
-    if ( word[i] = j || word[i] = J || word[i] = x || word[i] = X)
+    if ( word[i] == j || word[i] == J || word[i] == x || word[i] == X)
     {
         score = 8;
     }
-    if ( word[i] = q || word[i] = Q || word[i] = z || word[i] = Z)
+    if ( word[i] == q || word[i] == Q || word[i] == z || word[i] == Z)
     {
         score = 10;
     }
