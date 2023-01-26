@@ -27,7 +27,7 @@ int compute_score(string word)
     int score = 0;
   for( int i = 0; i < POINTS.length; i++ )
   {
-    if ( word[i] = a || word[i] = A || word[i] = e || word[i] = E || word[i] = l || word[i] = L || word[i] = n || word[i] = N || word[i] = o || word[i] = O || word[i] = r || word[i] = R || word[i] = s || word[i] = S || word[i] = t || word[i] = T || word[i] = u || word[i] = U)
+    if ( word[i] = a || word[i] = A || word[i] = e || word[i] = E || word[i] = l || word[i] = L || word[i] = n || word[i] = N || word[i] = o || word[i] = O || word[i] = r || word[i] = R || word[i] = s || word[i] = S || word[i] = t || word[i] = T || word[i] = u || word[i] = U )
     {
         score = 1;
 
@@ -36,5 +36,10 @@ int compute_score(string word)
     {
         score = 2;
     }
+    if ( word[i] = b || word[i] = B || word[i] = c || word[i] = C || word[i] = m || word[i] = M || word[i] = p || word[i] = P )
+    {
+        score = 3;
+    }
+    if ( word[i] = )
   }
 }
