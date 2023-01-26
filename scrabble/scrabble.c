@@ -44,5 +44,9 @@ int compute_score(string word)
     {
         score = 4;
     }
+    if ( word[i] = k || word[i] = K)
+    {
+        score = 5;
+    }
   }
 }
