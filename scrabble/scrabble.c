@@ -24,5 +24,5 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    for ( int i = 0; i < )
+    for ( int i = 0; i < world.lenght; i++ )
 }
