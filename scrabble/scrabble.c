@@ -48,5 +48,10 @@ int compute_score(string word)
     {
         score = 5;
     }
+    if ( word[i] = j || word[i] = J || word[i] = x || word[i] = X)
+    {
+        score = 8;
+    }
+    if ( word[i] = )
   }
 }
