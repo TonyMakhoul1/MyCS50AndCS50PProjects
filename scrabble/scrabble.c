@@ -43,6 +43,10 @@ int compute_score(string word)
     {
         arr[i] = word[i];
     }
+    for( int j = 0; j < n; j++ )
+    {
+        
+    }
 
     return score;
 
