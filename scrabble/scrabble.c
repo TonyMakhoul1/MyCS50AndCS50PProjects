@@ -19,6 +19,7 @@ int main(void)
     int score2 = compute_score(word2);
 
     // TODO: Print the winner
+    if()
 }
 
 int compute_score(string word)
@@ -52,6 +53,11 @@ int compute_score(string word)
     {
         score = 8;
     }
-    if ( word[i] = )
+    if ( word[i] = q || word[i] = Q || word[i] = z || word[i] = Z)
+    {
+        score = 10;
+    }
+    score += score;
   }
+  return score;
 }
