@@ -25,6 +25,7 @@ int compute_score(string word)
 {
     // TODO: Compute and return score for string
     int score = 0;
+    
     for ( int i = 0; i < strlen(word); i++ )
     {
         socre += score;
