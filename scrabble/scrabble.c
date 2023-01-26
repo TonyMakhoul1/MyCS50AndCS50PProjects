@@ -27,7 +27,16 @@ int compute_score(string word)
     int POINTS[];
     char Alpha[];
     int score = 0;
-    for ( int j = 0; j < )
+    for ( int j = 0; j < Alpha.length; j++ )
+    {
+        if(Alpha[j] == upper(Alpha[j]) || Alpha[j] == lower(Alpha[j]))
+        {
+            for ( int k = 0; k < POINTS.length; k++ )
+            {
+                
+            }
+        }
+    }
     for ( int i = 0; i < strlen(word); i++ )
     {
         socre += score;
