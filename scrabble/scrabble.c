@@ -42,6 +42,7 @@ int compute_score(string word)
     {
         arr[i] = word[i];
     }
+    
     return score;
 
 
