@@ -29,9 +29,12 @@ int compute_score(string word)
   {
     if ( word[i] = a || word[i] = A || word[i] = e || word[i] = E || word[i] = l || word[i] = L || word[i] = n || word[i] = N || word[i] = o || word[i] = O || word[i] = r || word[i] = R || word[i] = s || word[i] = S || word[i] = t || word[i] = T || word[i] = u || word[i] = U)
     {
-        socre = 1;
+        score = 1;
 
     }
-    if ( word[i] = )
+    if ( word[i] = d || word[i] = D || word[i] = g || word[i] = G )
+    {
+        score = 2;
+    }
   }
 }
