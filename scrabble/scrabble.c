@@ -40,6 +40,9 @@ int compute_score(string word)
     {
         score = 3;
     }
-    if ( word[i] = )
+    if ( word[i] = f || word[i] = F || word[i] = h || word[i] = H || word[i] = v || word[i] = V || word[i] = w || word[i] = W || word[i] = y || word[i] = Y )
+    {
+        score = 4;
+    }
   }
 }
