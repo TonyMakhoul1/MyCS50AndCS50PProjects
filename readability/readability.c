@@ -17,11 +17,11 @@ int main(void)
 
 
     letters = count_letters(text);
-    printf("letters: %d\n",letters);
+   // printf("letters: %d\n",letters);
     words = count_words(text);
-    printf("words: %d\n",words);
+   // printf("words: %d\n",words);
     sentences = count_sentences(text);
-    printf("sentences: %d\n",sentences);
+   // printf("sentences: %d\n",sentences);
 
 
 int index;
@@ -32,8 +32,8 @@ float L, S;
     S = (sentences / (float)words) * 100;
 
     index = round( (0.0588 * L ) - (0.296 * S ) - 15.8 );
-    printf("L:%f",L);
-    printf("S:%f",S);
+  //  printf("L:%f",L);
+  //  printf("S:%f",S);
 
 
     printf("Text: %s\n",text);
