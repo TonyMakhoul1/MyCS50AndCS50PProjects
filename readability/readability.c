@@ -38,6 +38,7 @@ int L, S, index;
     }
     if( index >= 16 )
     {
+        
         printf("Grade 16+\n");
     }
 
