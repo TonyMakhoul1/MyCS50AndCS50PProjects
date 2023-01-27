@@ -48,5 +48,12 @@ int main(int argc, string argv[])
 
 int only_digits(string s)
 {
-    
+    for( int i = 0; i < strlen(s); i++)
+    {
+        if(!isdigit(argv[1][i]))
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
+}
 }
