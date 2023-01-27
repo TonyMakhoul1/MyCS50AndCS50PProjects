@@ -36,7 +36,7 @@ int main(void)
     //  printf("S:%f",S);
 
 
-    printf("Text: %s\n",text);
+    printf("Text: %s\n", text);
 
     if (index < 1)
     {
