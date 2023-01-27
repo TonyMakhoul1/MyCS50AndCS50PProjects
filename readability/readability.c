@@ -9,7 +9,7 @@ int count_sentences(string text);
 int main(void)
 {
     string text;
-    int letters, words;
+    int letters, words, sentences;
 
 
     text = get_string("Text: ");
@@ -19,6 +19,8 @@ int main(void)
     printf("letters: %d\n",letters);
     words = count_words(text);
     printf("words: %d\n",words);
+    sentences = count_sentences(text);
+    printf("sentences: %d\n",sentences);
 
 
 
@@ -53,9 +55,13 @@ int count_words(string text)
 
 int count_sentences(string text)
 {
-    int counter;
+    int counter = 0;
     for( int i = 0; i < strlen(text); i++ )
     {
-        
+        if( text[i] == 33 || text[i] == 46 || text[i] == 63 )
+        {
+            counter++;
+        }
     }
+    return counter;
 }
