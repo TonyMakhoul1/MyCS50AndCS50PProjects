@@ -27,7 +27,7 @@ int L, S, index;
 
     L = (letters / words) * (float)100;
     S = (sentences / words) * (float)100;
-    index = (0.0588 * L ) - (0.296 * S ) -15,8;
+    index = (0.0588 * L ) - (0.296 * S ) - (15,8);
 
 
     printf("Text: %s\n",text);
