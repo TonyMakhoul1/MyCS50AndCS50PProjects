@@ -14,7 +14,7 @@ int main(int argc, string argv[])
 
     for( int i = 0; i < strlen(argv[1]); i++)
     {
-        
+
         int k;
         k = atoi(argv[1]);
 
@@ -56,4 +56,9 @@ int only_digits(string s)
             return 0;
         }
 }
+}
+
+char rotate(char c, int n)
+{
+    
 }
