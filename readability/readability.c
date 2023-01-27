@@ -2,15 +2,25 @@
 #include <stdio.h>
 #include <string.h>
 
-int count_letters(string Text);
+int count_letters(string text);
+int count_words(string text);
 
 int main(void)
 {
     string text;
-    int letters;
+    int letters, words;
+
+
     text = get_string("Text: ");
+
+
     letters = count_letters(text);
     printf("letters: %d\n",letters);
+    words = count_words(text);
+    printf("words: %d\n",words);
+
+
+
 
     printf("Text: %s\n",text);
 
@@ -25,8 +35,17 @@ int count_letters(string text)
         {
             counter++;
         }
+    }
+    return counter;
+}
 
-
+int count_words(string text)
+{
+    int counter = 0;
+    for( int i = 0; i < strlen(text); i++ )
+    {
+        if( text[i] == " " )
+        counter++;
     }
     return counter;
 }
