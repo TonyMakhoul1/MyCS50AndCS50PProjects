@@ -24,14 +24,14 @@ int main(void)
 
 
 int index;
-float L, S;
+int L, S;
 
 
     L = ((float)letters / (float)words) * 100;
     S = ((float)sentences / (float)words) * 100;
     index = (0.0588 * L ) - (0.296 * S ) - 15.8;
-    printf("L:%f",L);
-    printf("S:%f",S);
+    printf("L:%d",L);
+    printf("S:%d",S);
 
 
     printf("Text: %s\n",text);
