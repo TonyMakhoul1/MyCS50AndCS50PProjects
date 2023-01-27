@@ -23,11 +23,12 @@ int main(void)
     printf("sentences: %d\n",sentences);
 
 
-int L, S, index;
+int index;
+float L, S;
 
 
-    L = (letters / (float)words) * 100;
-    S = (sentences / (float)words) * 100;
+    L = (letters / words) * 100;
+    S = (sentences / words) * 100;
     index = (0.0588 * L ) - (0.296 * S ) - 15.8;
     printf("L:%d",L);
     printf("S:%d",S);
