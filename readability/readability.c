@@ -38,11 +38,11 @@ int L, S, index;
     }
     else if( (index >= 1) || (index < 16) )
     {
-        printf("Grade %d",index);
+        printf("Grade %d\n",index);
     }
     else
     {
-        printf("Grade 16+");
+        printf("Grade 16+\n");
     }
 
 
