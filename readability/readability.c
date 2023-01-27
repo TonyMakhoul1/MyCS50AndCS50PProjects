@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include<math.h>
 
 int count_letters(string text);
 int count_words(string text);
@@ -29,8 +30,8 @@ float L, S;
 
     L = (letters / (float)words) * 100;
     S = (sentences / (float)words) * 100;
-    
-    index = (0.0588 * L ) - (0.296 * S ) - 15.8;
+
+    index = round( (0.0588 * L ) - (0.296 * S ) - 15.8 );
     printf("L:%f",L);
     printf("S:%f",S);
 
