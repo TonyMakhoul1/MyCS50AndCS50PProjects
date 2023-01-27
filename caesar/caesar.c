@@ -45,3 +45,8 @@ int main(int argc, string argv[])
 
 
 }
+
+int only_digits(string s)
+{
+    
+}
