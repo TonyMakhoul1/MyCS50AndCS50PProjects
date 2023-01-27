@@ -46,7 +46,7 @@ int L, S, index;
     }
 
 
-    printf("Grade %d\n",index);
+   // printf("Grade %d\n",index);
 
 }
 
