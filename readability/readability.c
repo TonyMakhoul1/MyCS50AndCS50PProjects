@@ -27,11 +27,11 @@ int index;
 float L, S;
 
 
-    L = (letters / words) * 100;
-    S = (sentences / words) * 100;
+    L = ((float)letters / (float)words) * 100;
+    S = ((float)sentences / (float)words) * 100;
     index = (0.0588 * L ) - (0.296 * S ) - 15.8;
-    printf("L:%d",L);
-    printf("S:%d",S);
+    printf("L:%f",L);
+    printf("S:%f",S);
 
 
     printf("Text: %s\n",text);
