@@ -44,7 +44,7 @@ int count_words(string text)
     int counter = 0;
     for( int i = 0; i < strlen(text); i++ )
     {
-        if( text[i] == " " )
+        if( text[i] == 32 )
         counter++;
     }
     return counter;
