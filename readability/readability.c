@@ -32,7 +32,16 @@ int L, S, index;
 
     printf("Text: %s\n",text);
 
-    if( index == 1 )
+    if( index < 1 )
+    {
+        printf("Before Grade 1");
+    }
+    if( index >= 16 )
+    {
+        printf("Grade 16+");
+    }
+
+    printf("Grade %d\n",index);
 
 }
 
