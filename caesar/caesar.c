@@ -1,5 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
 
 int main(int argc, string argv[])
 {
@@ -9,7 +11,15 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    for( int i = 0; i < strlen())
+    for( int i = 0; i < strlen(argv[1]); i++)
+    {
+        if(!isdigit(argv[1]))
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
+        
+    }
 
 
 }
