@@ -29,7 +29,15 @@ int main(int argc, string argv[])
         {
             if(islower(plaintext[j]))
             {
-                printf("%c", (plaintext[j] + k))
+                printf("%c", (plaintext[j] - 97 + k) % 26 + 97);
+            }
+            else if(isupper(plaintext[j]))
+            {
+                printf("%c", (plaintext[j] - 65 + k) % 26 + 65);
+            }
+            else
+            {
+                printf("%c",plaintext[j]);
             }
         }
     }
