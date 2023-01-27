@@ -37,17 +37,17 @@ int compute_score(string word)
 {
     // TODO: Compute and return score for string
     int score = 0;
-    char arr[n];
-    int n = strlen(word);
-    for ( int i = 0; i < n; i++)
+    for ( int i = 0; i < strlen(word); i++ )
     {
-        arr[i] = word[i];
+        if ( isupper(word[i]) )
+        {
+            score = score + ( POINTS[word[i] - 65] )
+        }
+        if ( islower(word[i]) )
+        {
+            score = score + ( POINTS[word[i] - 97])
+        }
     }
-    for( int j = 0; j < n; j++ )
-    {
-        
-    }
-
     return score;
 
 
