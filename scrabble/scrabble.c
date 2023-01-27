@@ -19,15 +19,15 @@ int main(void)
     int score2 = compute_score(word2);
 
     // TODO: Print the winner
-    if( score1 > score2 )
+    if (score1 > score2)
     {
         printf("Player 1 wins!\n");
     }
-    if( score1 < score2 )
+    if (score1 < score2)
     {
         printf("Player 2 wins!\n");
     }
-    if( score1 == score2 )
+    if (score1 == score2)
     {
         printf("Tie!\n");
     }
