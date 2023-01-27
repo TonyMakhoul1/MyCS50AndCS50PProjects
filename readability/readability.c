@@ -30,9 +30,10 @@ int L, S, index;
     S = (sentences / (float)words) * 100;
     index = (0.0588 * L ) - (0.296 * S ) - 15.8;
 
-
     printf("Text: %s\n",text);
-    printf("Grade: %d\n",index);
+
+    if( index == 1 )
+
 }
 
 int count_letters(string text)
