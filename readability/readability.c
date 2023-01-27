@@ -45,12 +45,7 @@ int L, S, index;
         printf("Grade %d\n",index);
     }
 
-letters = count_letters(text);
-    printf("letters: %d\n",letters);
-    words = count_words(text);
-    printf("words: %d\n",words);
-    sentences = count_sentences(text);
-    printf("sentences: %d\n",sentences);
+
 
    // printf("Grade %d\n",index);
 
