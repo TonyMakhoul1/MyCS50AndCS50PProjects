@@ -50,10 +50,14 @@ int only_digits(string s)
 {
     for( int i = 0; i < strlen(s); i++)
     {
-        if(!isdigit(argv[1][i]))
+        if(!isdigit(s) && (s >= 0 && s <= 9))
         {
             printf("Usage: ./caesar key\n");
             return 1;
+        }
+        else
+        {
+            return 0;
         }
 }
 }
