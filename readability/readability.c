@@ -16,11 +16,11 @@ int main(void)
 
 
     letters = count_letters(text);
-  //  printf("letters: %d\n",letters);
+    printf("letters: %d\n",letters);
     words = count_words(text);
-  //  printf("words: %d\n",words);
+    printf("words: %d\n",words);
     sentences = count_sentences(text);
-  //  printf("sentences: %d\n",sentences);
+    printf("sentences: %d\n",sentences);
 
 
 int L, S, index;
