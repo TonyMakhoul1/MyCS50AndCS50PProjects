@@ -23,6 +23,9 @@ int main(void)
     printf("sentences: %d\n",sentences);
 
 
+int L, S, index;
+
+
 
 
     printf("Text: %s\n",text);
