@@ -9,28 +9,27 @@ char rotate(char c, int n);
 
 int main(int argc, string argv[])
 {
-    if(argc != 2 || !only_digits(argv[1]))
+    if (argc != 2 || !only_digits(argv[1]))
     {
         printf("Usage: ./caesar key\n");
         return 1;
     }
 
 
-   // for( int i = 0; i < strlen(argv[1]) ; i++)
-   // {
-        //only_digits(argv[1]);
+    // for( int i = 0; i < strlen(argv[1]) ; i++)
+    // {
+    //only_digits(argv[1]);
 
-        int k;
-        k = atoi(argv[1]);
+    int k;
+    k = atoi(argv[1]);
+    string plaintext = get_string("Plaintext: ");
+    printf("Ciphertext: ");
 
-        string plaintext = get_string("Plaintext: ");
-        printf("Ciphertext: ");
-
-        for( int j = 0; j < strlen(plaintext); j++ )
+    for (int j = 0; j < strlen(plaintext); j++)
         {
-            rotate(plaintext[j],k);
+            rotate(plaintext[j], k);
         }
- //    }
+//    }
         printf("\n");
         return 0;
 }
@@ -41,9 +40,9 @@ int main(int argc, string argv[])
 
 bool only_digits(string s)
 {
-    for( int i = 0; i < strlen(s); i++)
+    for (int i = 0; i < strlen(s); i++)
     {
-        if((!isdigit(s[i])))
+        if ((!isdigit(s[i])))
         {
             return false;
         }
@@ -56,17 +55,17 @@ char rotate(char c, int n)
 {
 
 
-            if(islower(c))
-            {
-                printf("%c", (c - 97 + n) % 26 + 97);
-            }
-            else if(isupper(c))
-            {
-                printf("%c", (c - 65 + n) % 26 + 65);
-            }
-            else
-            {
-                printf("%c",c);
-            }
-            return c;
+     if (islower(c))
+     {
+         printf("%c", (c - 97 + n) % 26 + 97);
+     }
+     else if(isupper(c))
+     {
+         printf("%c", (c - 65 + n) % 26 + 65);
+     }
+     else
+     {
+         printf("%c",c);
+     }
+     return c;
 }
