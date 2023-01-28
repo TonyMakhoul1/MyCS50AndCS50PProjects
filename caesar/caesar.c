@@ -9,15 +9,15 @@ char rotate(char c, int n);
 
 int main(int argc, string argv[])
 {
-    if(argc != 2 || !only_digits(argv[1]) )
+    if(argc != 2 || !only_digits(argv[1]))
     {
         printf("Usage: ./caesar key\n");
         return 1;
     }
 
 
-    for( int i = 0; i < strlen(argv[1]) ; i++)
-    {
+   // for( int i = 0; i < strlen(argv[1]) ; i++)
+   // {
         //only_digits(argv[1]);
 
         int k;
@@ -30,7 +30,7 @@ int main(int argc, string argv[])
         {
             rotate(plaintext[j],k);
         }
-     }
+ //    }
         printf("\n");
         return 0;
 }
