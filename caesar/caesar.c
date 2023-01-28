@@ -46,11 +46,11 @@ bool only_digits(string s)
         if((!isdigit(s[i])) && (s[i] >= 0 && s[i] <= 9))
         {
             printf("Usage: ./caesar key\n");
-            return true;
+            return 0;
         }
 
     }
-    return 0;
+    return 1;
 }
 
 char rotate(char c, int n)
