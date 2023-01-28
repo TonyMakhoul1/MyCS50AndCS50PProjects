@@ -29,12 +29,11 @@ int main(int argc, string argv[])
         for( int j = 0; j < strlen(plaintext); j++ )
         {
             rotate(plaintext[j],k);
-
         }
      }
         printf("\n");
         return 0;
-    }
+}
 
 
 
