@@ -18,7 +18,7 @@ int main(int argc, string argv[])
 
     for( int i = 0; i < strlen(argv[1]); i++)
     {
-        only_digits(argv[1][i]);
+        only_digits(argv[1]);
 
         int k;
         k = atoi(argv[1]);
@@ -40,7 +40,7 @@ int main(int argc, string argv[])
 
 
 
-bool only_digits(string s[])
+bool only_digits(string s)
 {
     for( int i = 0; i < strlen(s); i++)
     {
