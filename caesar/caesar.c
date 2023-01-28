@@ -18,7 +18,7 @@ int main(int argc, string argv[])
 
     for( int i = 0; i < strlen(argv[1]); i++)
     {
-        only_digits(argv[i]);
+        only_digits(argv[1]);
 
         int k;
         k = atoi(argv[1]);
