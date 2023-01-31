@@ -20,4 +20,5 @@ sort3 uses: TODO
 Bubble Sort
 
 How do you know?: TODO
-Because had the
+Because had the O(n^2) in the worst-case
+and Ω(n) in the best-case
