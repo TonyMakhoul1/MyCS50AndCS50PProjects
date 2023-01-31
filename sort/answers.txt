@@ -5,7 +5,7 @@ Because it's the slowest one of the sorts
 sort2 uses: TODO
 Merge Sort
 How do you know?: TODO
-
+Because it's the fastest one of the sorts
 sort3 uses: TODO
-
+Bubble Sort
 How do you know?: TODO
