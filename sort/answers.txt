@@ -6,7 +6,7 @@ and in the best-case
 sort2 uses: TODO
 Merge Sort
 How do you know?: TODO
-Because had the O(n log n) 
+Because Ω(n log n) had the O(n log n)
 sort3 uses: TODO
 Bubble Sort
 How do you know?: TODO
