@@ -1,24 +1,24 @@
-sort1 uses: TODO
+sort1 uses:
 Selection Sort
 
-How do you know?: TODO
+How do you know?:
 Because had the O(n^2) in the worst-case
 and Ω(n^2) in the best-case
 
 
 
-sort2 uses: TODO
+sort2 uses:
 Merge Sort
 
-How do you know?: TODO
+How do you know?:
 Because had the O(n log n) in the worst-case
 and Ω(n log n) in the best-case
 
 
 
-sort3 uses: TODO
+sort3 uses:
 Bubble Sort
 
-How do you know?: TODO
+How do you know?: 
 Because had the O(n^2) in the worst-case
 and Ω(n) in the best-case
