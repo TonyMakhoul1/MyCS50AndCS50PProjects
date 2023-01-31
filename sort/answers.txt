@@ -1,7 +1,7 @@
 sort1 uses: TODO
-
+Selection Sort
 How do you know?: TODO
-
+Because it's the slowest one of the sorts
 sort2 uses: TODO
 
 How do you know?: TODO
