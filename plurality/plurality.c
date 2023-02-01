@@ -96,6 +96,7 @@ void print_winner(void)
   //  for( int k = 0; k < candidate_count; k++ )
   //  {
    //     if(candidates[k].votes == vote)
+       
        printf("The winner is :%s\n", candidates.name);
     //}
 
