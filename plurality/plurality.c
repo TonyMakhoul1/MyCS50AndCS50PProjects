@@ -101,5 +101,5 @@ void print_winner(void)
         printf("The winner is :%s\n", candidates[k].name);
     }
 
-    return;
+    
 }
