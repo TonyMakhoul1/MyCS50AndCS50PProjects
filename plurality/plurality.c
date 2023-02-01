@@ -83,7 +83,7 @@ void print_winner(void)
 {
     // TODO
     string winner;
-    int vote[];
+    int vote;
     vote = candidates[0].votes;
     for( int i = 1; i < candidate_count; i++ )
     {
