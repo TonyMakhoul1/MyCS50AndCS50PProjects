@@ -83,5 +83,17 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
+    int winner;
+    for( int i = 1; i < candidates[MAX]; i++ )
+    {
+        winner = candidates[0].name;
+        if( candidates[i].votes > candidates[0].vote)
+        {
+            winner = candidates[i].name;
+        }
+        if( )
+
+
+    }
     return;
 }
