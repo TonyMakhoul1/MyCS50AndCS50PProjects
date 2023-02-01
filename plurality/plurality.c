@@ -93,8 +93,12 @@ void print_winner(void)
             winner = candidates[i].name;
             vote = candidates[i].votes;
         }
-        
     }
-    if()
+    for( i = 0; i < candidates[MAX]; i++ )
+    {
+        if( vote == candidates[i].votes)
+        printf("The winner is :", candidates[i].name);
+    }
+
     return;
 }
