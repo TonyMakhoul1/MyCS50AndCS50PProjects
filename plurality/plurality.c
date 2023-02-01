@@ -73,7 +73,7 @@ bool vote(string name)
         if (strcmp(candidates[i],name) == 0)
         {
             return true;
-            candidate[i].votes++;
+            candidates[i].votes++;
         }
     }
     return false;
