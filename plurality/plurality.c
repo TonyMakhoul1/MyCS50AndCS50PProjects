@@ -91,7 +91,7 @@ void print_winner(void)
         {
             winner = candidates[i].name;
         }
-        if( )
+        
 
 
     }
