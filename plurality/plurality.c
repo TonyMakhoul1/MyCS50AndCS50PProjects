@@ -67,6 +67,7 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
+    length = candidates
     for ( int i = 0; i < )
     return false;
 }
