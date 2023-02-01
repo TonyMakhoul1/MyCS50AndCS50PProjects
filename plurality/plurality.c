@@ -67,8 +67,15 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-    length = candidates
-    for ( int i = 0; i < )
+    length = candidates[MAX];
+    for (int i = 0; i < length; i++)
+    {
+        if (strcmp(candidates[i],name) == 0)
+        {
+            return true;
+            candidate_
+        }
+    }
     return false;
 }
 
