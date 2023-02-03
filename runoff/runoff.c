@@ -152,6 +152,7 @@ void tabulate(void)
             if(!candidates[index].eliminated)
             {
                 candidates[index].votes++;
+                break;
             }
         }
     }
