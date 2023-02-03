@@ -161,9 +161,14 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    int winvote = voter_count/2;
+    int winvote = ((voter_count/2) + 1);
     for (int i = 0; i < candidate_count; i++)
     {
+        if (candidates[i].votes >= winvote)
+        {
+            printf("%s",candidates[i].name);
+            return true;
+        }
 
     }
     return false;
@@ -173,6 +178,18 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
+    int min = MAX_VOTERS;
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if
+        {
+            
+        }
+        if (candidates[i].vote < min)
+        {
+            min = candidates[i].vote;
+        }
+    }
     return 0;
 }
 
