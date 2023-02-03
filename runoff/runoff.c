@@ -189,7 +189,7 @@ int find_min(void)
             }
         }
     }
-    return 0;s
+    return 0;
 }
 
 // Return true if the election is tied between all candidates, false otherwise
