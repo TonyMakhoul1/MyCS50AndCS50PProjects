@@ -146,6 +146,9 @@ void tabulate(void)
     for (int i = 0; i < voter_count; i++)
     {
         for (int i = 0; i < candidate_count; j++)
+        {
+            
+        }
     }
     return;
 }
