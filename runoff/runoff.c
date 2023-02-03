@@ -202,9 +202,13 @@ bool is_tie(int min)
     candidate rest[];
     for (int i = 0; i < candidates_count; i++)
     {
-        if ((candidates[i].votes == min) && (candidates))
-
+        if (candidates[i].votes == min)
+        {
+            candidates[i].eliminated = true;
+            rest[i];
+        }
     }
+    for (int j = 0; j < rest[])
     return false;
 }
 
