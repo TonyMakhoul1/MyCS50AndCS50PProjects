@@ -23,7 +23,14 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-
+            original[i][j] = image[i][j];
+        }
+    }
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0, int swapcol = width-1; j < width; j++)
+        {
+            image[i][j] = original[i][swapcol];
         }
     }
     return;
