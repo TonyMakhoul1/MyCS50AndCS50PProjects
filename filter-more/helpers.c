@@ -128,6 +128,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             int r = round(sqrt(xR * xR + yR * yR));
             int g = round(sqrt(xG * xG + yG * yG));
             int b = round(sqrt(xB * xB + yB * yB));
+
+            image[]
         }
     }
     return;
