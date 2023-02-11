@@ -41,7 +41,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE temp[height][width];
-    float totalR = 0, totalG = 0, totalB = 0;
+
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
@@ -49,6 +49,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             int count = 0;
             int rowx[] = { i-1, i, i+1 };
             int colx[] = { j-1, j, j+1 };
+            float totalR = 0, totalG = 0, totalB = 0;
             for (int row = 0; row < 3; row++)
             {
                 for(int col = 0; col < 3; col++)
