@@ -115,6 +115,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 {
                     int rowx = new_row[rowc];
                     int colx = new_col[colc];
+                    RGBTRIPLE pixel = previous[rowx][colx];
+                    xR += pixel
                 }
             }
         }
