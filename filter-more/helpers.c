@@ -93,13 +93,13 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             previous[i][j] = image[i][j];
         }
     }
-    gx[3][3] =
+    int gx[3][3] =
     {
-        {-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}
+        {-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1};
     }
-    gy[3][3] =
+    int gy[3][3] =
     {
-        {-1, -2, -1}, {0, 0, 0}, {1, 2, 1}
+        {-1, -2, -1}, {0, 0, 0}, {1, 2, 1};
     }
     for (int i = 0; i < height; i++)
     {
@@ -116,7 +116,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     int rowx = new_row[rowc];
                     int colx = new_col[colc];
                     RGBTRIPLE pixel = previous[rowx][colx];
-                    if (rowx >= 0 && rowx < height && colc >= 0 &&)
+                    if (rowx >= 0 && rowx < height && colc >= 0 && colc < width)
+                    {
                     xR += pixel.rgbtRed * gx[rowc][colc];
                     xG += pixel.rgbtGreen * gx[rowc][colc];
                     xB += pixel.rgbtBlue * gx[rowc][colc];
@@ -124,6 +125,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     yR += pixel.rgbtRed * gy[rowc][colc];
                     yG += pixel.rgbtGreen * gy[rowc][colc];
                     yB += pixel.rgbtBlue * gy[rowc][colc];
+                    }
                 }
             }
             int r = round(sqrt(xR * xR + yR * yR));
