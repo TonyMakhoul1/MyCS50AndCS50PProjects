@@ -53,8 +53,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for(int col = 0; col < 3; col++)
                 {
-                    currow = rowx[row];
-                    curcol = colx[col];
+                    int currow = rowx[row];
+                    int curcol = colx[col];
                     if (currow >= 0 && currow < height && curcol >=0 && curcol < width)
                     {
                         RGBTRIPLE pixel = image[currow][curcol];
