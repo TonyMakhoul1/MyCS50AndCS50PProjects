@@ -116,7 +116,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     int rowx = new_row[rowc];
                     int colx = new_col[colc];
                     RGBTRIPLE pixel = previous[rowx][colx];
-                    if (rowx >= 0 && rowx < height && colc >= 0 && colc < width)
+                    if (rowx >= 0 && rowx < height && colx >= 0 && colx < width)
                     {
                     xR += pixel.rgbtRed * gx[rowc][colc];
                     xG += pixel.rgbtGreen * gx[rowc][colc];
