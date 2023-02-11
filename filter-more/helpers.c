@@ -125,6 +125,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     yB += pixel.rgbtBlue * gy[rowc][colc];
                 }
             }
+            int r = round(sqrt(xR * xR + yR * yR));
+            int g = round(sqrt(xG * xG + yG * yG));
+            int b = round(sqrt(xB * xB + yB * yB));
         }
     }
     return;
