@@ -105,8 +105,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            new_row[3] = {row-1, row, row+1};
-            new_col[3] = {col-1, col, col+1};
+            int new_row[3] = {row-1, row, row+1};
+            int new_col[3] = {col-1, col, col+1};
             int xR = 0, xG = 0, xB = 0;
             int yR = 0, yG = 0, yB = 0;
             for (int rowc = 0; rowc < 3; rowc++)
@@ -116,7 +116,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     int rowx = new_row[rowc];
                     int colx = new_col[colc];
                     RGBTRIPLE pixel = previous[rowx][colx];
-                    xR += pixel
+                    xR += pixel.
                 }
             }
         }
