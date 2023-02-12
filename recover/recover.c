@@ -16,6 +16,9 @@ int main(int argc, char *argv[])
                printf("Can't open %s", argv[1]);
            }
     }
+    int count = 0;
+    unint8_t BYTE;
+    
 
 
 
