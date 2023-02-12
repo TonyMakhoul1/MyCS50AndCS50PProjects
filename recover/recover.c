@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     BYTE buffer[512];
     bool found;
     FILE *output;
-    char filename
+    char filename;
 
     while (fread(buffer, 512, 1, file) == 1)
     {
