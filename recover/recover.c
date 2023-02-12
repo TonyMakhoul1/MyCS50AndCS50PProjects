@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
            }
     }
     int count = 0;
-    unint8_t BYTE;
+    BYTE buffer[512];
+    
 
 
 
