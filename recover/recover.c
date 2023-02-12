@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-    FILE *file;
+    FILE *file = fopen(arbv[1], "r");
     if (argc != 2)
     {
         printf("Usage recover\n");
@@ -11,14 +11,14 @@ int main(int argc, char *argv[])
     }
     else
     {
-        if (file = fopen(argv[1], "r") == NULL)
+        if (file == NULL)
            {
                printf("Can't open %s", argv[1]);
            }
     }
     int count = 0;
     unint8_t BYTE;
-    
+
 
 
 
