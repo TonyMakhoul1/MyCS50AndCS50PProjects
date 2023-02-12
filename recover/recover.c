@@ -9,11 +9,15 @@ int main(int argc, char *argv[])
         printf("Usage recover\n");
         return 1;
     }
-    if (file = fopen(argv[1], "r") == NULL)
+    else
     {
-        printf("Can't open %s", argv[1]);
+        if (file = fopen(argv[1], "r") == NULL)
+           {
+               printf("Can't open %s", argv[1]);
+           }
     }
-    
+
+
 
 
 }
