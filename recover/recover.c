@@ -20,12 +20,10 @@ int main(int argc, char *argv[])
     }
     int count = 0;
     BYTE buffer[512];
-    
 
-
-
-
-
-
+    while (fread(buffer, 1, 1, file) == 1)
+    {
+        
+    }
 
 }
