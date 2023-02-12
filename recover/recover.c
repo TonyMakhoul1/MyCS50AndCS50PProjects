@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     BYTE buffer[512];
     bool found = false;
     FILE *output;
-    char filename;
+    char filename[8];
 
     while (fread(buffer, 512, 1, file) == 1)
     {
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
             {
                 fclose(output);
             }
-            
+
 
         }
     }
