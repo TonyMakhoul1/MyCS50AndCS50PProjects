@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     }
     int count = 0;
     BYTE buffer[512];
-    bool found;
+    bool found = false;
     FILE *output;
     char filename;
 
@@ -36,6 +36,7 @@ int main(int argc, char *argv[])
             {
                 fclose(output);
             }
+            
 
         }
     }
