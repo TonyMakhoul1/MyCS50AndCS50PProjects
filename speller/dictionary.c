@@ -42,6 +42,7 @@ bool load(const char *dictionary)
     {
         return 1;
     }
+    char word[LENGTH + 1];
     
     return false;
 }
