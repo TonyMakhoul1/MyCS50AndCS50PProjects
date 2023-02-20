@@ -52,20 +52,21 @@ bool load(const char *dictionary)
             return 0;
         }
         strcpy(node -> word, words);
-    }
-    int h = hash(words);
-    if (table[h] == NULL)
-    {
-        n -> next = NULL;
-        table -> next = n;
-    }
-    else
-    {
-        n -> next = table[h] -> next;
-        table[h] -> = n -> next;
-    }
-    countword++;
 
+        int h = hash(words);
+        if (table[h] == NULL)
+        {
+            n -> next = NULL;
+            table -> next = n;
+        }
+        else
+        {
+            n -> next = table[h] -> next;
+            table[h] -> = n -> next;
+        }
+        countword++;
+    }
+    fclose(file);
     return true;
 }
 
