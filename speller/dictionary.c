@@ -38,6 +38,10 @@ bool load(const char *dictionary)
 {
     // TODO
     FILE *file = fopen(dictionary, "r");
+    if (file == NULL)
+    {
+        return 1;
+    }
     return false;
 }
 
