@@ -50,7 +50,7 @@ bool load(const char *dictionary)
         {
             return 0;
         }
-        strcpy()
+        strcpy(node -> word, newword);
     }
     return false;
 }
