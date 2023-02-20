@@ -42,15 +42,15 @@ bool load(const char *dictionary)
     {
         return 0;
     }
-    char newword[LENGTH + 1];
-    while (fscanf(file,"%s",newword) != EOF)
+    char words[LENGTH + 1];
+    while (fscanf(file,"%s",words) != EOF)
     {
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
             return 0;
         }
-        strcpy(node -> word, newword);
+        strcpy(node -> word, words);
     }
     
     return false;
