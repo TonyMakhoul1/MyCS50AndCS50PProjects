@@ -40,12 +40,17 @@ bool load(const char *dictionary)
     FILE *file = fopen(dictionary, "r");
     if (file == NULL)
     {
-        return 1;
+        return 0;
     }
     char newword[LENGTH + 1];
     while (fscanf(file,"%s",newword) != EOF)
     {
-        
+        node *n = malloc(sizeof(node));
+        if (n == NULL)
+        {
+            return 0;
+        }
+        strcpy()
     }
     return false;
 }
