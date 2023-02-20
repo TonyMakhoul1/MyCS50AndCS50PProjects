@@ -37,6 +37,7 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    countword = 0;
     FILE *file = fopen(dictionary, "r");
     if (file == NULL)
     {
@@ -53,8 +54,19 @@ bool load(const char *dictionary)
         strcpy(node -> word, words);
     }
     int h = hash(words);
-    
-    return false;
+    if (table[h] == NULL)
+    {
+        n -> next = NULL;
+        table -> next = n;
+    }
+    else
+    {
+        n -> next = table[h] -> next;
+        table[h] -> = n -> next;
+    }
+    countword++;
+
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
