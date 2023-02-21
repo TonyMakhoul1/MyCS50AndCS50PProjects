@@ -121,9 +121,9 @@ bool unload(void)
     {
         while (table[i] != NULL)
         {
-            node *tmp = table[i];
-            table[i] = table[i] -> next;
+            node * tmp = table[i] -> next;
             free(table[i]);
+            table[i] = tmp;
         }
     }
     return true;
