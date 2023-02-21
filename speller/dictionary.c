@@ -79,14 +79,26 @@ unsigned int size(void)
     int counter = 0;
     for (int i = 0; i < N; i++)
     {
-        node *
+        node *tmp = table[i];
+        while (tmp != NULL)
+        {
+            counter++;
+            tmp = tmp -> next;
+        }
     }
-    return 0;
+    return counter;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
     // TODO
+    for (int i = 0; i < N; i++)
+    {
+        while (tmp != NULL)
+        {
+            
+        }
+    }
     return false;
 }
