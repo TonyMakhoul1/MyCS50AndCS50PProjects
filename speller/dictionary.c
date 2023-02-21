@@ -24,7 +24,12 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    
+    int length = strlen(word);
+    int copy[length +1];
+    for (int i = 0; i < length ; i++)
+    {
+        
+    }
     return false;
 }
 
