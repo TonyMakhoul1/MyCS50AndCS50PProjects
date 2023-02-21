@@ -36,7 +36,7 @@ unsigned int hash(const char *word)
     {
         value += tolower(word[i]);
     }
-    return toupper(word[0]) - 'A';
+    return value / N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
