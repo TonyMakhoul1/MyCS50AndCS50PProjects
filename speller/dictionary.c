@@ -28,8 +28,9 @@ bool check(const char *word)
     int copy[length +1];
     for (int i = 0; i < length ; i++)
     {
-        
+        copy[i] = word[i];
     }
+    copy[length] = '\0';
     return false;
 }
 
