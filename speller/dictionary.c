@@ -2,8 +2,7 @@
 
 #include <ctype.h>
 #include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
+
 
 #include "dictionary.h"
 
@@ -32,6 +31,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
+    
     return toupper(word[0]) - 'A';
 }
 
@@ -39,37 +39,37 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    countword = 0;
+    int countword = 0;
     FILE *file = fopen(dictionary, "r");
     if (file == NULL)
     {
         return 0;
     }
     char words[LENGTH + 1];
-    while (fscanf(file,"%s",words) != EOF)
+    while (fscanf(file, "%s", words) != EOF)
     {
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
+            fclose(file);
             return 0;
         }
-        strcpy(node -> word, words);
-
+        strcpy(n -> word, words);
         int h = hash(words);
-        if (table[h] == NULL)
+        if (table[h] -> next == NULL)
         {
             n -> next = NULL;
-            table -> next = n;
+            table[h] -> next = n;
         }
         else
         {
             n -> next = table[h] -> next;
-            table[h] -> = n -> next;
+            table[h] -> next = n;
         }
         countword++;
     }
-    fclose(file);
-    return true;
+        fclose(file);
+        return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
