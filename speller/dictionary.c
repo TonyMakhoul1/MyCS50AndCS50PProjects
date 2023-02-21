@@ -76,7 +76,11 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    
+    int counter = 0;
+    for (int i = 0; i < N; i++)
+    {
+        node *
+    }
     return 0;
 }
 
