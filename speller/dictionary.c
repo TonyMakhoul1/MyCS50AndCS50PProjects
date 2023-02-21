@@ -31,6 +31,8 @@ bool check(const char *word)
         copy[i] = word[i];
     }
     copy[length] = '\0';
+    int hash = hash(word[i]);
+    
     return false;
 }
 
