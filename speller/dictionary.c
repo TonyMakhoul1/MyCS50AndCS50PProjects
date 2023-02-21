@@ -32,7 +32,10 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     int value = 0;
-    for (int i = 0; i < )
+    for (int i = 0; word[i] = '\0'; i++)
+    {
+        value += tolower(word[i]);
+    }
     return toupper(word[0]) - 'A';
 }
 
