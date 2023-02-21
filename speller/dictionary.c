@@ -31,10 +31,19 @@ bool check(const char *word)
         copy[i] = word[i];
     }
     copy[length] = '\0';
-    int hash = hash(word[i]);
-    node head = malloc(sizeof(node));
-    node current = malloc(sizeof(node));
-    
+    int hash = hash(word);
+    node * head = table[hash];
+    node * current = head;
+
+    while (current != NULL)
+    {
+        if (strcmp(word, current -> word) == 0)
+        {
+            return true;
+        }
+        current = head -> next;
+        head = current;
+    }
     return false;
 }
 
