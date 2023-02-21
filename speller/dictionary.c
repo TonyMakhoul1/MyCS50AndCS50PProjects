@@ -24,6 +24,7 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
+    
     return false;
 }
 
@@ -32,11 +33,11 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     int value = 0;
-    for (int i = 0; word[i] = '\0'; i++)
+    for (int i = 0; word[i] != '\0'; i++)
     {
         value += tolower(word[i]);
     }
-    return value / N;
+    return (value / N);
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -106,5 +107,5 @@ bool unload(void)
             free(table[i]);
         }
     }
-    return return;
+    return true;
 }
