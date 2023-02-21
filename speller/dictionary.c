@@ -31,8 +31,8 @@ bool check(const char *word)
         copy[i] = word[i];
     }
     copy[length] = '\0';
-    int hash = hash(word);
-    node * head = table[hash];
+    int h = hash(word);
+    node * head = table[h];
     node * current = head;
 
     while (current != NULL)
