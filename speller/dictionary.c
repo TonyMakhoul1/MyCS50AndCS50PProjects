@@ -32,6 +32,8 @@ bool check(const char *word)
     }
     copy[length] = '\0';
     int hash = hash(word[i]);
+    node head = malloc(sizeof(node));
+    node current = malloc(sizeof(node));
     
     return false;
 }
