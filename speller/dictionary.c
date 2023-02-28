@@ -33,20 +33,9 @@ bool check(const char *word)
     {
         copy[i] = tolower(word[i]);
     }
-    copy[length] = '\0';
-    int h = hash(word);
-    node * head = table[h];
-    node * current = head;
-
-    while (current != NULL)
-    {
-        if (strcmp(word, current -> word) == 0)
-        {
-            return true;
-        }
-        current = head -> next;
-        head = current;
-    }
+    int ind = hash(copy);
+    if (table[ind] == NULL)
+    
     return false;
 }
 
