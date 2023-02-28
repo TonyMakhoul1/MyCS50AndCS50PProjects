@@ -75,7 +75,20 @@ bool load(const char *dictionary)
     char words[LENGTH + 1];
     while (fgets(words, "%s", file) != NULL)
     {
-        int hashpos = 
+        int hashpos = (int) toupper(word[0]) -65;
+        if (table[hashpos] == NULL)
+        {
+            node *n = malloc(sizeof(node));
+            if (n == NULL)
+            {
+                printf("Not enough memory.\n");
+                return false;
+            }
+            for (int k = 0; k < strlen(word); k++)
+            {
+                n ->
+            }
+        }
     }
         fclose(file);
         return true;
