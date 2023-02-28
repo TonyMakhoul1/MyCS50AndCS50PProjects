@@ -35,7 +35,9 @@ bool check(const char *word)
     }
     int ind = hash(copy);
     if (table[ind] == NULL)
-    
+    {
+        return 0;
+    }
     return false;
 }
 
