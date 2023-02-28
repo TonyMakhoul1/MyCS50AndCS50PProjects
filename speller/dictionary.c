@@ -38,6 +38,15 @@ bool check(const char *word)
     {
         return 0;
     }
+    node *tmp = table[ind];
+    while (tmp != NULL)
+    {
+        if (strcmp(tmp ->word, copy) == 0)
+        {
+            return 1;
+        }
+        tmp = tmp -> next;
+    }
     return false;
 }
 
@@ -119,7 +128,7 @@ bool unload(void)
         {
             tmp = current;
             current = current -> next;
-            free(tmp)
+            free(tmp);
         }
     }
     return false;
