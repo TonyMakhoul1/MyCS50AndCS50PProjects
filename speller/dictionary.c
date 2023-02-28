@@ -73,27 +73,9 @@ bool load(const char *dictionary)
         return 0;
     }
     char words[LENGTH + 1];
-    while (fscanf(file, "%s", words) != EOF)
+    while (fgets(words, "%s", file) != NULL)
     {
-        node *n = malloc(sizeof(node));
-        if (n == NULL)
-        {
-            fclose(file);
-            return 0;
-        }
-        strcpy(n -> word, words);
-        int h = hash(words);
-        if (table[h] -> next == NULL)
-        {
-            n -> next = NULL;
-            table[h] -> next = n;
-        }
-        else
-        {
-            n -> next = table[h] -> next;
-            table[h] -> next = n;
-        }
-        countword++;
+        int hashpos = 
     }
         fclose(file);
         return true;
