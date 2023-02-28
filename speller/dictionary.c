@@ -107,7 +107,7 @@ unsigned int size(void)
     for (int i = 0; i < N; i++)
     {
         node *tmp = table[i];
-        while (tmp != NULL)
+        while (tmp ->next != NULL)
         {
             counter++;
             tmp = tmp -> next;
