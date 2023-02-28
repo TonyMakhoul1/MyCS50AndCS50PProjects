@@ -3,7 +3,8 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <string.h>
-#include <
+#include <stdlib.h>
+
 
 
 #include "dictionary.h"
