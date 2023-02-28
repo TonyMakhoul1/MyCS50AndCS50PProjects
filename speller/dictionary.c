@@ -29,9 +29,9 @@ bool check(const char *word)
     // TODO
     int length = strlen(word);
     int copy[length +1];
-    for (int i = 0; i < length ; i++)
+    for (int i = 0; i != '\0' ; i++)
     {
-        copy[i] = word[i];
+        copy[i] = tolower(word[i]);
     }
     copy[length] = '\0';
     int h = hash(word);
