@@ -122,12 +122,14 @@ bool unload(void)
     // TODO
     for (int i = 0; i < N; i++)
     {
-        while (table[i] != NULL)
+        node *tmp = malloc(sizeof(node));
+        node *current = table[i];
+        while (current -> next != NULL)
         {
-            node * tmp = table[i] -> next;
-            free(table[i]);
-            table[i] = tmp;
+            tmp = current;
+            current = current -> next;
+            free(tmp)
         }
     }
-    return true;
+    return false;
 }
