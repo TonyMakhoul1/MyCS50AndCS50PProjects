@@ -128,7 +128,7 @@ bool unload(void)
         {
             tmp = current;
             current = current -> next;
-            free(tmp)
+            free(tmp);
         }
     }
     return false;
