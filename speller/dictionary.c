@@ -66,7 +66,6 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    int countword = 0;
     FILE *file = fopen(dictionary, "r");
     if (file == NULL)
     {
@@ -83,17 +82,18 @@ bool load(const char *dictionary)
         }
         strcpy(n -> word, words);
         int h = hash(words);
-        if (table[h] -> next == NULL)
+        n -> next = h;
+        h = n;
+        if (table[h] == NULL)
         {
+            table[h] = n;
             n -> next = NULL;
-            table[h] -> next = n;
         }
         else
         {
-            n -> next = table[h] -> next;
-            table[h] -> next = n;
+            n -> next = table[h];
+            table[h] = n;
         }
-        countword++;
     }
         fclose(file);
         return true;
