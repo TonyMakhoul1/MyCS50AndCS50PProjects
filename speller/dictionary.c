@@ -28,7 +28,7 @@ bool check(const char *word)
 {
     // TODO
     int length = strlen(word);
-    int copy[length +1];
+    char copy[length +1];
     for (int i = 0; i != '\0' ; i++)
     {
         copy[i] = tolower(word[i]);
