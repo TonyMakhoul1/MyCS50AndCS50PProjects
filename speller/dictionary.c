@@ -72,7 +72,7 @@ bool load(const char *dictionary)
         return 0;
     }
     char words[LENGTH + 1];
-    while (fgets(words, "%s", file) != NULL)
+    while (fgets(words, LENGTH + 1, file) != NULL)
     {
         int hashpos = (int) toupper(words[0]) -65;
         if (table[hashpos] == NULL)
