@@ -66,7 +66,6 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    int countword = 0;
     FILE *file = fopen(dictionary, "r");
     if (file == NULL)
     {
@@ -75,7 +74,7 @@ bool load(const char *dictionary)
     char words[LENGTH + 1];
     while (fgets(words, "%s", file) != NULL)
     {
-        int hashpos = (int) toupper(word[0]) -65;
+        int hashpos = (int) toupper(words[0]) -65;
         if (table[hashpos] == NULL)
         {
             node *n = malloc(sizeof(node));
@@ -84,13 +83,13 @@ bool load(const char *dictionary)
                 printf("Not enough memory.\n");
                 return false;
             }
-            for (int k = 0; k < strlen(word); k++)
+            for (int k = 0; k < strlen(words); k++)
             {
-                n ->
+                n -> word[k] = words[k];
             }
+            n -> next = table[hashpos];
         }
     }
-        fclose(file);
         return true;
 }
 
