@@ -7,4 +7,5 @@ while True:
         break
 height = 1
 for i in range(height):
-    print((height - i ))
+    print((height - i) * " ",end = "")
+    print("#")
