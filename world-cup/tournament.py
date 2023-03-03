@@ -17,7 +17,7 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
     file = open("2018m.csv", "a")
-    
+    f = 
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
