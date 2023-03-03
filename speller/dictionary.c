@@ -72,40 +72,7 @@ bool load(const char *dictionary)
         printf("Dictionary does not exist.\n");
         return false;
     }
-    char word[LENGTH + 1];
-    while (fgets(word, LENGTH + 1, file) != NULL)
-    {
-        int hashpos = (int) toupper(word[0]) - 65;
-        if (table[hashpos] == NULL)
-        {
-            node *n = malloc(sizeof(node));
-            if (n == NULL)
-            {
-                printf("Not enough memory.\n");
-                return false;
-            }
-            for (int k = 0; k < strlen(word); k++)
-            {
-                n -> word[k] = word[k];
-            }
-            n -> next = NULL;
-            table[hashpos] = n;
-        }
-        else
-        {
-            node *new = malloc(sizeof(node));
-            if ( new == NULL)
-            {
-                printf("Not enough memory.\n");
-                return false;
-            }
-            for (int l = 0; l < strlen(word); l++)
-            {
-                new -> word[l] = word[l];
-            }
-            new -> next = table[hashpos];
-        }
-    }
+    
         return true;
 }
 
