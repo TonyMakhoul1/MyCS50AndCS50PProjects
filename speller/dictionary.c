@@ -108,11 +108,12 @@ bool unload(void)
     {
         node *h = table[i];
         node *current = h;
+        node *tmp = h;
         while (current -> next != NULL)
         {
-            tmp = current;
             current = current -> next;
             free(tmp);
+            tmp = current;
         }
     }
     return false;
