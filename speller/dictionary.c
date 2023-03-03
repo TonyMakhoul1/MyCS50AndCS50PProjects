@@ -116,5 +116,5 @@ bool unload(void)
             tmp = current;
         }
     }
-    return false;
+    return true;
 }
