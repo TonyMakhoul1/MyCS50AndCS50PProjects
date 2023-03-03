@@ -82,6 +82,8 @@ bool load(const char *dictionary)
         }
         strcpy(n ->word, str);
         int hashh = hash(str);
+
+        if (hash)
     }
 
         return true;
