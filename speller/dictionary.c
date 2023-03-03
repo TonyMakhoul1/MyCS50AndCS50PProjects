@@ -89,9 +89,9 @@ bool load(const char *dictionary)
         }
         else
         {
-            n -> next = table[hash];
+            n -> next = table[hashh];
         }
-        fclose
+        fclose(file);
     }
 
         return true;
