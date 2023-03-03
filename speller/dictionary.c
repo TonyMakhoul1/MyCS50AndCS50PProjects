@@ -72,8 +72,8 @@ bool load(const char *dictionary)
         printf("Dictionary does not exist.\n");
         return false;
     }
-    char = 
-    while(fscanf(file, "%s", word))
+    char str[LENGTH +1];
+    while(fscanf(file, "%s", str) != EOF)
         return true;
 }
 
