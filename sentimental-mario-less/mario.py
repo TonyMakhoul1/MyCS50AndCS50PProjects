@@ -8,4 +8,4 @@ while True:
 i = 0
 for i in range(height):
     print((height - i -1) * " ",end = "")
-    print((height) * "#")
+    print((height ) * "#")
