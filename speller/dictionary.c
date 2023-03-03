@@ -104,17 +104,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    int counter = 0;
-    for (int i = 0; i < N; i++)
-    {
-        node *tmp = table[i];
-        while (tmp -> next != NULL)
-        {
-            counter++;
-            tmp = tmp -> next;
-        }
-    }
-    return counter;
+    return count;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
