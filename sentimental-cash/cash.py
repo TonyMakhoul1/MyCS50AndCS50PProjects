@@ -1,3 +1,4 @@
 # TODO
 import cs50
-def get_cents
+def get_cents():
+    
