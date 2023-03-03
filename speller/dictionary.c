@@ -49,11 +49,11 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     int value = 0;
-    for (int i = 0; word[i] != '\0'; i++)
+    for (int i = 0; i < strlen(word); i++)
     {
         value += tolower(word[i]);
     }
-    return (value / N);
+    return (value % N);
 }
 
 // Loads dictionary into memory, returning true if successful, else false
