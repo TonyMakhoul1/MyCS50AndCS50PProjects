@@ -9,6 +9,5 @@ while True:
 for i in range(height):
     for j in range(height - i):
         print(" ")
-
-        for k in range(i):
-            print("#")
+    for k in range(i):
+        print("#")
