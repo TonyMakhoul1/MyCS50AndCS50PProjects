@@ -28,26 +28,9 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    int length = strlen(word);
-    char copy[length +1];
-    for (int i = 0; i != '\0' ; i++)
-    {
-        copy[i] = tolower(word[i]);
-    }
-    int ind = hash(copy);
-    if (table[ind] == NULL)
-    {
-        return 0;
-    }
-    node *tmp = table[ind];
-    while (tmp != NULL)
-    {
-        if (strcmp(tmp ->word, copy) == 0)
-        {
-            return 1;
-        }
-        tmp = tmp -> next;
-    }
+    int hashh = hash(word);
+
+    
     return false;
 }
 
