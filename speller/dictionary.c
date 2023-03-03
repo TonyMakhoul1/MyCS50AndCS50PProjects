@@ -109,7 +109,7 @@ bool unload(void)
         node *h = table[i];
         node *current = h;
         node *tmp = h;
-        while (current -> next != NULL)
+        while (current != NULL)
         {
             current = current -> next;
             free(tmp);
