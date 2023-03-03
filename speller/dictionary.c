@@ -33,9 +33,12 @@ bool check(const char *word)
     node *current = table[hashh];
     while(current != NULL)
     {
-        strcasecmp(hash)
+        if(strcasecmp(current -> word, word) == 0)
+        {
+            return true;
+        }
+        current = current -> next;
     }
-
     return false;
 }
 
