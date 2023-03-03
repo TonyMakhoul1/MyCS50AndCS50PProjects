@@ -83,7 +83,15 @@ bool load(const char *dictionary)
         strcpy(n ->word, str);
         int hashh = hash(str);
 
-        if ()
+        if (table[hashh] == NULL)
+        {
+            n -> next = NULL;
+        }
+        else
+        {
+            n -> next = table[hash];
+        }
+        fclose
     }
 
         return true;
