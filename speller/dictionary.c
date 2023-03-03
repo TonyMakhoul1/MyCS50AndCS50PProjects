@@ -21,7 +21,7 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
- int count = 0;
+int count = 0;
 
 // Hash table
 node *table[N];
@@ -33,9 +33,9 @@ bool check(const char *word)
     int hashh = hash(word);
 
     node *current = table[hashh];
-    while(current != NULL)
+    while (current != NULL)
     {
-        if(strcasecmp(current -> word, word) == 0)
+        if (strcasecmp(current -> word, word) == 0)
         {
             return true;
         }
@@ -66,8 +66,8 @@ bool load(const char *dictionary)
         printf("Dictionary does not exist.\n");
         return false;
     }
-    char str[LENGTH +1];
-    while(fscanf(file, "%s", str) != EOF)
+    char str[LENGTH + 1];
+    while (fscanf(file, "%s", str) != EOF)
     {
         node *n = malloc(sizeof(node));
         if (n == NULL)
@@ -89,8 +89,7 @@ bool load(const char *dictionary)
         count += 1;
     }
     fclose(file);
-
-        return true;
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
