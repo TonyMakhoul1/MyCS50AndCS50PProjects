@@ -12,4 +12,6 @@ def calculate_quarters(cents):
     return q
 
 def calculate_dimes(cents):
-    d = cents / 
+    d = cents / 10
+    return d
+
