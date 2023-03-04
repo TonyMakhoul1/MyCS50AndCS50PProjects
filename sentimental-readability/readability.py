@@ -9,7 +9,7 @@ for i in range(len(text)):
     if text[i].islower() | text[i].isupper():
         letters += 1
     if text[i] == 32:
-        letters += 1
+        words += 1
     if text[i] in {33, 46, 63}:
         sentences += 1
 
