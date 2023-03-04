@@ -41,7 +41,7 @@ def main():
 
     coins = quarters + dimes + nickels + pennies
 
-    print(coins)
+    print(f"{coins}")
 
 if __name__=='__main__':
     main()
