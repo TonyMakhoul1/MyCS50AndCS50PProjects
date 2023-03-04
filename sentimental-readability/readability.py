@@ -5,7 +5,7 @@ text = get_string("Text: ")
 letters = 0
 words = 1
 sentences = 0
-for i in text:
+for i in range(len(text)):
     if text[i].islower() | text[i].isupper():
         letters += 1
     if text[i] == 32:
