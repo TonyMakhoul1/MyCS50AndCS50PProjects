@@ -2,8 +2,16 @@
 from cs50 import get_string
 
 text = get_string("Text: ")
-
-
+letters = 0
+words = 1
+sentences = 0
+for i in text:
+    if text[i].islower() | text[i].isupper():
+        letters += 1
+    if text[i] == 32:
+        letters += 1
+    if text[i] in {33, 46, 63}:
+        sentences += 1
 
 L = (letters / words) * 100
 S = (sentences / words) * 100
