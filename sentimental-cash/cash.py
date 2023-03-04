@@ -15,3 +15,10 @@ def calculate_dimes(cents):
     d = cents / 10
     return d
 
+def calculate_nickels(cents):
+    n = cents / 5
+    return n
+
+def calculate_pennies(cents):
+    p = cents / 1
+    return p
