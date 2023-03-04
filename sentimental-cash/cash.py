@@ -9,3 +9,7 @@ def get_cents():
 
 def calculate_quarters(cents):
     q = cents / 25
+    return q
+
+def calculate_dimes(cents):
+    d = cents / 
