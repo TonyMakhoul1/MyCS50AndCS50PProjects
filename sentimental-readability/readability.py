@@ -8,4 +8,7 @@ letters = count_letters(text)
 def count_letters(text):
     counter = 0
     for i in text:
-        if text[i].upper
+        if text[i].islower() | text[i].isupper:
+            counter += 1
+    return counter
+
