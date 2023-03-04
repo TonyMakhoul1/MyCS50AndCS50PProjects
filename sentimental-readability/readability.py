@@ -31,5 +31,11 @@ sentences = count_sentences(text)
 L = (letters / words) * 100
 S = (sentences / words) * 100
 
-index = 
+index = round((0.0588 * L) - (0.296 * S) - 15.8)
+
+print(f"Text: {text}")
+
+if (index < 1):
+    print("Before Grade 1")
+    elif (indes)
 
