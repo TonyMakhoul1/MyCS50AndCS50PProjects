@@ -10,7 +10,7 @@ coins = {25, 10, 5, 1}
 countcoins = 0
 
 for i in coins:
-    while amount >= i:
+    if amount >= i:
         amount -= i
         countcoins += 1
 print(f"{countcoins} coins")
