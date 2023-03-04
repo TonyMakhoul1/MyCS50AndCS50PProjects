@@ -25,7 +25,7 @@ def calculate_pennies(cents):
 
 
 def main():
-    
+
     cents = get_cents()
 
     quarters = calculate_quarters(cents)
