@@ -1,11 +1,16 @@
 import csv
 import sys
+from sys import argv
 
 
 def main():
 
     # TODO: Check for command-line usage
-    
+    if argv != 3:
+        print("Error!")
+        return 0
+    else:
+        
 
     # TODO: Read database file into a variable
 
