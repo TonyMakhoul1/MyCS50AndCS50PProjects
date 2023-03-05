@@ -13,8 +13,9 @@ def main():
         for argv[1] in csv
 
     # TODO: Read database file into a variable
-    filedata = open("large.csv","a")
-    
+    with open("large.csv", "a") as filedata:
+        reader = csv.DictReader(filedata)
+        
 
     # TODO: Read DNA sequence file into a variable
 
