@@ -8,9 +8,9 @@ def main():
     # TODO: Check for command-line usage
     if argv != 3:
         print("Error!")
-        return 0
+        sys.exit(1)
     else:
-        for argv[1] in 
+        for argv[1] in csv
 
     # TODO: Read database file into a variable
 
