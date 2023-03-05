@@ -10,7 +10,7 @@ def main():
         print("Error!")
         return 0
     else:
-        
+        for argv[1] in 
 
     # TODO: Read database file into a variable
 
