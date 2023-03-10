@@ -9,13 +9,14 @@ def main():
     if argv != 3:
         print("Error!")
         sys.exit(1)
-    else:
-        for argv[1] in csv
 
     # TODO: Read database file into a variable
-    with open("large.csv", "a") as filedata:
-        reader = csv.DictReader(filedata)
-        
+    database = []
+    with open("argv[1]", "r") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            database.append(row)
+
 
     # TODO: Read DNA sequence file into a variable
 
