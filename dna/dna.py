@@ -6,7 +6,7 @@ from sys import argv
 def main():
 
     # TODO: Check for command-line usage
-    if argv != 3:
+    if len(argv) != 3:
         print("Error!")
         sys.exit(1)
 
