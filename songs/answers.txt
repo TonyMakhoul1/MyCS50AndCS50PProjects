@@ -1,1 +1,1 @@
-I compare the count of genres of songs and i take the reponse 
+I compare the count of genres of songs and i take the reponse through the majority
