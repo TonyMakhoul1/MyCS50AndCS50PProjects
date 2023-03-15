@@ -1,1 +1,2 @@
-I compare the count of genres of songs and i take the reponse through the majority
+I compare the count of genres of songs and i take the reponse through the majority.
+The best way to calculate the aura is from the count of DataBase.
