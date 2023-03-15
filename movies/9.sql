@@ -1,1 +1,1 @@
-SELECT name FROM people JOIN sta
+SELECT name FROM people JOIN stars ON 
