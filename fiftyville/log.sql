@@ -50,3 +50,7 @@ ORDER BY hour,minute
 LIMIT 1);
 
 SELECT phone_number FROM people WHERE name = "Bruce";
+
+SELECT name FROM people
+WHERE phone_number=(SELECT receiver FROM phone_calls
+WHERE year = 2021 AND month = 7 AND day = 28 AND duration <60 AND caller = "(367) 555-5533");
