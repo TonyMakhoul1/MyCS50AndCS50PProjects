@@ -1,1 +1,1 @@
-SELECT title 
+SELECT title, year FROM movies
