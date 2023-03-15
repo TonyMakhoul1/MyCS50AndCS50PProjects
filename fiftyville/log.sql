@@ -12,7 +12,7 @@ WHERE year = 2021 AND month = 7 AND day = 28 AND transcript LIKE '%bakery%';
 
 
 --I don't know the thief's name, but it was someone I recognized.
--- Earlier this morning, before I arrived at Emma's bakery,
+--Earlier this morning, before I arrived at Emma's bakery,
 --I was walking by the ATM on Leggett Street and saw the thief there withdrawing some money.
 
 
