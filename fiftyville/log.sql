@@ -28,3 +28,10 @@ AND atm_location = "Leggett Street" AND transaction_type = "withdraw";
 --In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow.
 --The thief then asked the person on the other end of the phone to purchase the flight ticket.
 
+SELECT name FROM people
+JOIN passengers ON passengers.passport_number = people.passport_number
+WHERE passengers.flight_id = (SELECT id FROM flights
+WHERE year = 2021 AND month = 7 AND day = 29
+AND origin_airport_id = (SELECT id FROM airports WHERE city = "Fiftyville")
+ORDER BY hour,minute
+LIMIT 1);
