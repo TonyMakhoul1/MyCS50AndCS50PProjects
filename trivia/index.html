@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.AddEventListener('DOMContentLoaded', function(){
+                let correct = document.querySelector('.correct');
+                
+            })
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>what is the approximate ratio of people to sheep in New Zealand?</h3>
+
+                    <button class ="Incorrect">6 people per 1 sheep</button>
+                    <button class ="Incorrect">3 people per 1 sheep</button>
+                    <button class ="Incorrect">1 people per 1 sheep</button>
+                    <button class ="Incorrect">1 people per 3 sheep</button>
+                    <button class ="Correct">1 people per 6 sheep</button>
+                <p id = "Response"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which country it is illegal to own only one guinea pig,as a lone guinea pig might get lonely?</h3>
+
+                <input type = "text"></input>
+                <button id = "check">Check Answer</button>
+                <p id = "response2"></p>
+            </div>
+        </div>
+    </body>
+</html>
