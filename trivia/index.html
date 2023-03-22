@@ -16,14 +16,17 @@
                 let incorrect = document.querySelectorAll('.incorrect');
                 for(let i = 0; i < incorrect.length; i++){
                     incorrect[i].AddEventListener('click',function(){
-                        incorrect[i].style.backgorundColor = 'red';
+                        incorrect[i].style.backgroundColor = 'red';
                         document.querySelector('#Response').innerHTML = 'Incorrect';
                     })
                 }
             });
             document.querySelector('#check').AddEventListener('click',function(){
                 let input = document.querySelector('input');
-                
+                if(input.value === 'Switzerland'){
+                    input.querySelector.backgroundColor = 'green';
+                    document.querySelector('#Response2').innerHTML = 'Correct';
+                }
             })
         </script>
     </head>
