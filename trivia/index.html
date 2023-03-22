@@ -18,7 +18,7 @@
                     incorrect[i].AddEventListener('click',function(){
                         incorrect[i].style.backgroundColor = 'red';
                         document.querySelector('#Response').innerHTML = 'Incorrect';
-                    })
+                    });
                 }
             });
             document.querySelector('#check').AddEventListener('click',function(){
@@ -26,8 +26,11 @@
                 if(input.value === 'Switzerland'){
                     input.querySelector.backgroundColor = 'green';
                     document.querySelector('#Response2').innerHTML = 'Correct';
+                } else {
+                    input.querySelector.backgroundColor = 'red';
+                    document.querySelector('#Response2'),innerHTML = 'Incorrect';
                 }
-            })
+            });
         </script>
     </head>
     <body>
