@@ -8,16 +8,16 @@
         <script>
             // TODO: Add code to check answers to questions
             document.addEventListener('DOMContentLoaded', function(){
-                let correct = document.querySelector('.correct');
+                let correct = document.querySelector('.Correct');
                 correct.addEventListener('click',function(){
                     correct.style.backgroundColor = 'green';
-                    document.querySelector('#Response').innerHTML = 'Correct!';
+                    document.querySelector('#Response1').innerHTML = 'Correct!';
                 });
-                let incorrect = document.querySelectorAll('.incorrect');
+                let incorrect = document.querySelectorAll('.Incorrect');
                 for(let i = 0; i < incorrect.length; i++){
                     incorrect[i].addEventListener('click',function(){
                         incorrect[i].style.backgroundColor = 'red';
-                        document.querySelector('#Response').innerHTML = 'Incorrect';
+                        document.querySelector('#Response1').innerHTML = 'Incorrect';
                     });
                 }
 
@@ -51,7 +51,7 @@
                     <button class ="Incorrect">1 people per 1 sheep</button>
                     <button class ="Incorrect">1 people per 3 sheep</button>
                     <button class ="Correct">1 people per 6 sheep</button>
-                <p id = "Response"></p>
+                <p id = "Response1"></p>
             </div>
 
             <div class="section">
@@ -62,7 +62,7 @@
 
                 <input type = "text"></input>
                 <button id = "check">Check Answer</button>
-                <p id = "response2"></p>
+                <p id = "Response2"></p>
             </div>
         </div>
     </body>
