@@ -11,8 +11,9 @@
                 let correct = document.querySelector('.correct');
                 correct.AddEventListener('click',function(){
                     correct.style.backgroundColor = 'green';
-                })
-            })
+                    document.querySelector('#Response').innerHTML = 'Correct!';
+                });
+            });
 
         </script>
     </head>
