@@ -16,7 +16,8 @@
                 let incorrect = document.querySelectorAll('.incorrect');
                 for(let i = 0; i < incorrect.length; i++){
                     incorrect[i].AddEventListener('click',function(){
-                        incorrect[i].style.backgorund
+                        incorrect[i].style.backgorund = 'red';
+                        document.querySelector('#Response2').innerHTML = 'Incorrect';
 
                     })
                 }
