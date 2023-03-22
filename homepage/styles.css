@@ -7,7 +7,7 @@
 }
 
 .about {
-    font-family: Serif;
+    font-family: Cursive;
 
 }
 
@@ -15,4 +15,6 @@ h1 {
     color: black;
 }
 
-li:
+li:hover {
+    color : blue;
+}
