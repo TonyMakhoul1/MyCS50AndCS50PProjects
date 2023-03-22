@@ -16,15 +16,10 @@
                 let incorrect = document.querySelectorAll('.incorrect');
                 for(let i = 0; i < incorrect.length; i++){
                     incorrect[i].AddEventListener('click',function(){
-                        incorrect[i].style.backgorund = 'red';
+                        incorrect[i].style.backgorundColor = 'red';
                         document.querySelector('#Response2').innerHTML = 'Incorrect';
-
                     })
                 }
-
-
-
-
             });
 
         </script>
