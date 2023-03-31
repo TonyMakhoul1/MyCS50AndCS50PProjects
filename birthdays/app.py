@@ -27,7 +27,9 @@ def index():
     if request.method == "POST":
 
         # TODO: Add the user's entry into the database
-
+        birthday = request.form.get("birthdays")
+        if birthday:
+            session["birthdays"].append[birthday]
         return redirect("/")
 
     else:
