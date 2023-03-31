@@ -27,7 +27,7 @@ def index():
     if request.method == "POST":
 
         # TODO: Add the user's entry into the database
-        people = db.execute("SELECT * FROM ")
+        people = db.execute("SELECT * FROM month, day")
         return redirect("/")
 
     else:
