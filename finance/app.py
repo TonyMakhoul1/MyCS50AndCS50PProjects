@@ -116,7 +116,22 @@ def register():
     """Register user"""
     if request.method == "GET":
         return render_template("register.html")
+    else:
+        username = request.form.get("username")
+        password = request.form.get("password")
+        confirmation = request.form.get("confirmation")
 
+        if not username:
+            return apology("You should give a name")
+        if not password:
+            return apology("You should give a password")
+        if not confirmation:
+            return apology("You should give a confirmation")
+        if password != confirmation:
+            return apology("It's not the same password")
+        hash = generate_password_hash(password)
+        try:
+            new_user = db.execute("INSERT INTO users(username,hash)")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
