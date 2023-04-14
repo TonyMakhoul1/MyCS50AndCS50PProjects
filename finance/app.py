@@ -117,7 +117,7 @@ def quote():
         stock = lookup(symbol.upper())
         if stock == None:
             return apology("Does not exist")
-        return render_template("quoted.html", name = )
+        return render_template("quoted.html", name = stock["name"], price = stock["price"])
 
 
 
