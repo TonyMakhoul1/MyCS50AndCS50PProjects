@@ -131,7 +131,9 @@ def register():
             return apology("It's not the same password")
         hash = generate_password_hash(password)
         try:
-            new_user = db.execute("INSERT INTO users(username,hash)")
+            new_user = db.execute("INSERT INTO users(username,hash) VALUES(?,?)", username, hash)
+        except:
+            return apology("This")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
