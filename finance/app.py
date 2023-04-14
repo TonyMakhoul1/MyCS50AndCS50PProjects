@@ -113,11 +113,12 @@ def quote():
     else:
         symbol = request.form.get("symbol")
         if not symbol:
-            return apology("You should give a symbole")
+            return apology("You should give a symbol")
         stock = lookup(symbol.upper())
         if stock == None:
             return apology("Does not exist")
-        
+        return render_template("quoted.html", name = )
+
 
 
 
