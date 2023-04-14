@@ -133,7 +133,7 @@ def register():
         try:
             new_user = db.execute("INSERT INTO users(username,hash) VALUES(?,?)", username, hash)
         except:
-            return apology("This")
+            return apology("This name is exist")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
