@@ -67,6 +67,12 @@ def buy():
 
         user_cash = user_cash_db[0]["cash"]
 
+        if user_cash < action_value:
+            return apology("Not Enough Money")
+        update_cash = user_cash_db - action_value
+
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", )
+
 
 
 @app.route("/history")
