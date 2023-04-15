@@ -61,7 +61,8 @@ def buy():
             return apology("This Symbol Does Not Exist")
         if shares < 0:
             return apology("Shares Should Be Positive")
-        
+        action_value = shares * stock["price"]
+        user_id = session["user_id"]
 
 
 
