@@ -63,7 +63,9 @@ def buy():
             return apology("Shares Should Be Positive")
         action_value = shares * stock["price"]
         user_id = session["user_id"]
-        
+        user_cash_db = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+
+        user_cash = user_cash_db[0]["cash"]
 
 
 
