@@ -55,7 +55,12 @@ def buy():
 
         if not symbol:
             return apology("You should give a symbol")
+
         stock = lookup(symbol.upper())
+        if stock == None:
+            return apology("This Symbol Does Not Exist")
+        if shares < 0:
+            return apology("Shares Should Be Positive")
         
 
 
