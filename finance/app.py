@@ -63,6 +63,7 @@ def buy():
             return apology("Shares Should Be Positive")
         action_value = shares * stock["price"]
         user_id = session["user_id"]
+        
 
 
 
