@@ -74,7 +74,7 @@ def buy():
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
 
-        date = datetime.now()
+        date = datetime.datetime.now()
 
         db.execute("INSERT INTO action(user_ID, symbol, shares, price, date) VALUES(?,?,?,?,?)", user_id, stock["symbol"], shares, stock["price"],date)
 
