@@ -11,27 +11,26 @@
         <th scope="col">Symbols</th>
         <th scope="col">Shares</th>
         <th scope="col">Price</th>
-        <th scope="col">TOTAL</th>
+
       </tr>
     </thead>
     <tbody>
+      {%for row in database%}
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td>{{row["symbol"]}}</td>
+        <td>{{row["shares"]}}</td>
+        <td>{{row["price"]}}</td>
+
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
+      {%end for%}
     </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <th>Cash</th>
+        <td>{{cash}}</td>
+      </tr>
+    </tfoot>
   </table>
 {% endblock %}
