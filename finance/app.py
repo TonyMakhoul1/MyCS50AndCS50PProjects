@@ -101,7 +101,7 @@ def add_cash():
     if request.method == "GET":
         return render_template("addcash.html")
     else:
-        
+        new_cash = int(request.form.get("new_cash"))
 
 
 @app.route("/login", methods=["GET", "POST"])
