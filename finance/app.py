@@ -222,7 +222,7 @@ def sell():
 
         date = datetime.datetime.now()
 
-        db.execute("INSERT INTO action(user_ID, symbol, shares, price, date) VALUES(?,?,?,?,?)", user_id, stock["symbol"], shares, stock["price"],date)
+        db.execute("INSERT INTO action(user_ID, symbol, shares, price, date) VALUES(?,?,?,?,?)", user_id, stock["symbol"], (-1)*shares, stock["price"],date)
 
         flash("Sold!")
         return redirect("/")
