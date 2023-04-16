@@ -94,6 +94,15 @@ def history():
     action_db = db.execute("SELECT * FROM action WHERE user_id = ?", user_id)
     return render_template("history.html", action = action_db)
 
+@app.route("/add_cash")
+@login_required
+def add_cash():
+    """The User Can Add Cash"""
+    if request.method == "GET":
+        return render_template("addcash.html")
+    else:
+        
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
