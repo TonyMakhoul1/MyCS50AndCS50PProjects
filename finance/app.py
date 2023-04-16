@@ -94,7 +94,7 @@ def history():
     action_db = db.execute("SELECT * FROM action WHERE user_id = ?", user_id)
     return render_template("history.html", action = action_db)
 
-@app.route("/add_cash")
+@app.route("/add_cash", methods = ["GET", "POST"])
 @login_required
 def add_cash():
     """The User Can Add Cash"""
@@ -102,6 +102,14 @@ def add_cash():
         return render_template("addcash.html")
     else:
         new_cash = int(request.form.get("new_cash"))
+        if not new_cash:
+            return apology("You should give a number")
+        user_id = session["user_id"]
+        user_cash_db = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        user_cash = user_cash_db[0]["cash"]
+        update_cash = user_cash + new_cash
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
+        return redirect("/")
 
 
 @app.route("/login", methods=["GET", "POST"])
