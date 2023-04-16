@@ -212,13 +212,13 @@ def sell():
 
         user_cash = user_cash_db[0]["cash"]
 
-        user_shares = db.execute("SELECT shares FROM action WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id , symbol)
-        real_shares = user_shares[0]["shares"]
+       # user_shares = db.execute("SELECT shares FROM action WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id , symbol)
+       #  real_shares = user_shares[0]["shares"]
 
 
 
-        if shares > real_shares:
-            return apology("You don't Have This Number Of Shares")
+        #if shares > real_shares:
+         #   return apology("You don't Have This Number Of Shares")
         update_cash = user_cash + action_value
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
