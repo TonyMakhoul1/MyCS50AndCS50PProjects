@@ -212,7 +212,8 @@ def sell():
 
         user_cash = user_cash_db[0]["cash"]
 
-        user_shares = db.execute("SELECT shares FROM action WHERE id = ? AND symbol = ? GROUP BY symbol ")
+        user_shares = db.execute("SELECT shares FROM action WHERE id = ? AND symbol = ? GROUP BY symbol", user_id , symbol)
+        use
         update_cash = user_cash - action_value
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
