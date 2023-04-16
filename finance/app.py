@@ -224,5 +224,5 @@ def sell():
 
         db.execute("INSERT INTO action(user_ID, symbol, shares, price, date) VALUES(?,?,?,?,?)", user_id, stock["symbol"], shares, stock["price"],date)
 
-        flash("Bought!")
+        flash("Sold!")
         return redirect("/")
