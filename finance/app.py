@@ -43,9 +43,9 @@ def index():
     """Show portfolio of stocks"""
     user_id = session["user_id"]
     action_db = db.excute("SELECT symbol, SUM(shares) AS shares, price FROM action WHERE user_id = ? GROUP BY symbol", user_id)
-    cash_db = db.execute("")
-
-
+    cash_db = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+    cash = cash_db[0]["cash"]
+    return render_templates("index.html", database = action_db, cash = cash)
 
 
 @app.route("/buy", methods=["GET", "POST"])
