@@ -42,7 +42,8 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     user_id = session["user_id"]
-    
+    action_db = db.excute("SELECT symbol, SUM(shares) AS shares, price FROM action WHERE user_id = ? GROUP BY symbol", user_id)
+
 
 
 
