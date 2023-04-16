@@ -1,7 +1,7 @@
 import os
 
 from cs50 import SQL
-from flask import Flask, flash, redirect, render_template, request, session,jsonify
+from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from tempfile import mkdtemp
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -213,7 +213,7 @@ def sell():
         user_cash = user_cash_db[0]["cash"]
 
         user_shares = db.execute("SELECT shares FROM action WHERE id = ? AND symbol = ? GROUP BY symbol", user_id , symbol)
-        return jsonify(real_shares)
+
         real_shares = user_shares[0]["shares"]
 
 
