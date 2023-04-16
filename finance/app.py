@@ -216,7 +216,7 @@ def sell():
         real_shares = user_shares[0]["shares"]
         if shares > real_shares:
             return apology("You don't Have This Number Of Shares")
-        update_cash = user_cash - action_value
+        update_cash = user_cash + action_value
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
 
