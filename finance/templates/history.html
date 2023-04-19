@@ -15,12 +15,12 @@
       </tr>
     </thead>
     <tbody>
-      {% for row in database %}
+      {% for row in action %}
       <tr>
-        <td>{{row["symbol"]}}</td>
-        <td>{{row["shares"]}}</td>
-        <td>{{row["price"]}}</td>
-        <td>{{row["date"]}}</td>
+        <td>{{ row["symbol"] }}</td>
+        <td>{{ row["shares"] }}</td>
+        <td>{{ row["price"] }}</td>
+        <td>{{ row["date"] }}</td>
 
       </tr>
       {% endfor %}
