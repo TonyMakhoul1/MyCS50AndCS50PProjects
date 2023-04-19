@@ -81,3 +81,5 @@ def register():
 def logout():
     session.clear()
     return redirect("/")
+
+
