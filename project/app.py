@@ -18,6 +18,6 @@ def index():
 def login():
     session.clear()
 
-    if method == "GET":
+    if request.method == "GET":
         return render_template("login.html")
 
