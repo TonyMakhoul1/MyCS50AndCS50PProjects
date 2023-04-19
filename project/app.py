@@ -1,6 +1,7 @@
 from cs50 import SQL
 from flask import Flask, redirect, render_template, request, session
 from flask_session import Session
+from werkzeug.security import generate_password_hash
 
 app = Flask("__name__")
 
@@ -14,12 +15,12 @@ db = SQL("sqlite:///project.db")
 def index():
     return render_template("layout.html")
 
-@app.route("/login", methods=['GET','POST'])
-def login():
-    session.clear()
+#@app.route("/login", methods=['GET','POST'])
+#def login():
+ #   session.clear()
 
-    if request.method == "GET":
-        return render_template("login.html")
+  #  if request.method == "GET":
+   #     return render_template("login.html")
 
 @app.route("/register", methods=['GET','POST'])
 def register():
@@ -39,5 +40,14 @@ def register():
         if not confirmpassword:
             message = "You Should Do The Confirmation"
             return render_template("message.html", message = message)
+        hash = generate_password_hash(password)
+
+        try:
+            new_user = db.execute("INSERT INTO users(username,hash) VALUES(?,?)", username, hash)
+        except:
+            message = "Username already exist"
+            return render_template("message.html", message = message)
+        session["user_id"] = new_user
+        return redirect("/")
 
 
