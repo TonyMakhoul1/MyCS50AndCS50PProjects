@@ -77,3 +77,7 @@ def register():
         return redirect("/")
 
 
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/")
