@@ -71,7 +71,9 @@ def register():
         except:
             message5 = "Username already exist"
             return render_template("message.html", message = message5)
-        session["user_id"] = new_user
+        user = db.execute("SELECT id FROM users WHERE username = ?", username)
+
+        session["user_id"] = user
         return redirect("/")
 
 
