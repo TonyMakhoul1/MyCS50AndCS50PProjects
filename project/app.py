@@ -17,3 +17,7 @@ def index():
 @app.route("/login")
 def login():
     session.clear()
+
+    if method == "GET":
+        return render_template("login.html")
+    
