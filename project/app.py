@@ -8,6 +8,6 @@ app.config["SESSION_PERMANT"] = false
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-app.route("/")
+@app.route("/")
 def index():
     return render_template("layout.html")
