@@ -21,6 +21,7 @@ def login():
 
     if request.method == "GET":
         return render_template("login.html")
+    
 
 @app.route("/register", methods=['GET','POST'])
 def register():
@@ -47,7 +48,7 @@ def register():
 
         try:
             new_user = db.execute("INSERT INTO users(username, hash) VALUES(?, ?)", username, hash)
-            
+
         except:
             message = "Username already exist"
             return render_template("message.html", message = message)
