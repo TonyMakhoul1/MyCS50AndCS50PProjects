@@ -34,7 +34,7 @@ def login():
         user = db.execute("SELECT * FROM users WHERE username = ?", username)
 
         if user and check_password_hash(user[0]["hash"], password):
-            session["user_id"] = user["id"]
+            session["user_id"] = user[0]["id"]
             return redirect("/")
         else:
             message3 = "Invalid username Or Password"
