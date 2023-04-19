@@ -47,6 +47,7 @@ def register():
 
         try:
             new_user = db.execute("INSERT INTO users(username, hash) VALUES(?, ?)", username, hash)
+            db.commit()
         except:
             message = "Username already exist"
             return render_template("message.html", message = message)
