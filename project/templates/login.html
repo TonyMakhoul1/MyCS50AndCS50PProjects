@@ -1,2 +1,8 @@
-{% extends layout.html%}
-{}
+{% extends "layout.html"%}
+{% block main %}
+    <form action="/login" method="pest">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text"></div>
+        </div>
+    </form>
+{% endblock %}
