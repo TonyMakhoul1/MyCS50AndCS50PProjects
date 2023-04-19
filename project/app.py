@@ -73,7 +73,7 @@ def register():
             return render_template("message.html", message = message5)
         user = db.execute("SELECT id FROM users WHERE username = ?", username)
 
-        session["user_id"] = user
+        session["user_id"] = user[0]["id"]
         return redirect("/")
 
 
