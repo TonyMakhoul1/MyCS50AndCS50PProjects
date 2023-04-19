@@ -14,10 +14,10 @@ db = SQL("sqlite:///project.db")
 def index():
     return render_template("layout.html")
 
-@app.route("/login")
+@app.route("/login", methods=['GET','POST'])
 def login():
     session.clear()
 
     if method == "GET":
         return render_template("login.html")
-    
+
