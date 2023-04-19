@@ -31,9 +31,14 @@ def login():
             message2 = "Enter A Password"
             return render_template("message.html", message = message2)
 
-        rows = db.execute("SELECT * FROM users WHERE username = ?", username)
+        user = db.execute("SELECT * FROM users WHERE username = ?", username)
 
-        if username != 
+        if user and check_password_hash(user[0]["hash"], password):
+            session["user_id"] = user["id"]
+            return redirect("/")
+        else:
+            message3 = "Invalid username Or Password"
+            return render_template("message.html", message = message3)
 
 
 
