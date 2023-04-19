@@ -9,5 +9,5 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 app.route("/")
-def index:
-    
+def index():
+    return render_template("layout.html")
