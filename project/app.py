@@ -40,6 +40,9 @@ def register():
         if not confirmpassword:
             message = "You Should Do The Confirmation"
             return render_template("message.html", message = message)
+        if password != confirmpassword:
+            message = "It's Not The Same Password"
+            return render_template("message.html", message = message)
         hash = generate_password_hash(password)
 
         try:
