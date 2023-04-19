@@ -21,7 +21,17 @@ def login():
 
     if request.method == "GET":
         return render_template("login.html")
-    
+    else:
+        if not request.form.get("username"):
+            message1 = "Enter A Username"
+            return render_template("message.html", message = message1)
+        elif not request.form.get("password"):
+            message2 = "Enter A Password"
+            return render_template("message.html", message = message2)
+
+        
+
+
 
 @app.route("/register", methods=['GET','POST'])
 def register():
@@ -33,25 +43,25 @@ def register():
         confirmpassword = request.form.get("confirmpassword")
 
         if not username:
-            message = "You should Give A Username"
-            return render_template("message.html", message = message)
+            message1 = "You should Give A Username"
+            return render_template("message.html", message = message1)
         if not password:
-            message = "You Should Give A Password"
-            return render_template("message.html", message = message)
+            message2 = "You Should Give A Password"
+            return render_template("message.html", message = message2)
         if not confirmpassword:
-            message = "You Should Do The Confirmation"
-            return render_template("message.html", message = message)
+            message3 = "You Should Do The Confirmation"
+            return render_template("message.html", message = message3)
         if password != confirmpassword:
-            message = "It's Not The Same Password"
-            return render_template("message.html", message = message)
+            message4 = "It's Not The Same Password"
+            return render_template("message.html", message = message4)
         hash = generate_password_hash(password)
 
         try:
             new_user = db.execute("INSERT INTO users(username, hash) VALUES(?, ?)", username, hash)
 
         except:
-            message = "Username already exist"
-            return render_template("message.html", message = message)
+            message5 = "Username already exist"
+            return render_template("message.html", message = message5)
         session["user_id"] = new_user
         return redirect("/")
 
