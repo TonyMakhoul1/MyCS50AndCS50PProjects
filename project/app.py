@@ -33,7 +33,7 @@ def login():
 
         rows = db.execute("SELECT * FROM users WHERE username = ?", username)
 
-        if 
+        if username != 
 
 
 
