@@ -14,9 +14,11 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              {% if session["user_id"] %}
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="/home">Home</a>
+                <a class="nav-item nav-link active" href="/Home">Log In</a>
                 <a class="nav-item nav-link" href="/price">Price</a>
                 <a class="nav-item nav-link" href="/buy">Buy</a>
                 <a class="nav-item nav-link disabled" href="/sell">Sell</a>

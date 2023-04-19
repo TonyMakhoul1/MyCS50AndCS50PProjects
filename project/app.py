@@ -12,5 +12,7 @@ Session(app)
 def index():
     return render_template("layout.html")
 
-@app.route("/")
-def 
+@app.route("/login")
+def login():
+    session.clear()
+    
