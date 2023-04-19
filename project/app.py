@@ -22,14 +22,18 @@ def login():
     if request.method == "GET":
         return render_template("login.html")
     else:
-        if not request.form.get("username"):
+        username = request.form.get("username")
+        password = request.form.get("password")
+        if not username:
             message1 = "Enter A Username"
             return render_template("message.html", message = message1)
-        elif not request.form.get("password"):
+        elif not password:
             message2 = "Enter A Password"
             return render_template("message.html", message = message2)
 
-        
+        rows = db.execute("SELECT * FROM users WHERE username = ?", username)
+
+        if 
 
 
 
