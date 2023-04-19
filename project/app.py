@@ -29,6 +29,15 @@ def register():
         username = request.form.get("username")
         password = request.form.get("password")
         confirmpassword = request.form.get("confirmpassword")
-        
+
+        if not username:
+            message = "You should Give A Username"
+            return render_template("message.html", message = message)
+        if not password:
+            message = "You Should Give A Password"
+            return render_template("message.html", message = message)
+        if not confirmpassword:
+            message = "You Should Do The Confirmation"
+            return render_template("message.html", message = message)
 
 
