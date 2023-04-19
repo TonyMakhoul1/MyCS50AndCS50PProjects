@@ -15,12 +15,12 @@ db = SQL("sqlite:///project.db")
 def index():
     return render_template("layout.html")
 
-#@app.route("/login", methods=['GET','POST'])
-#def login():
- #   session.clear()
+@app.route("/login", methods=['GET','POST'])
+def login():
+    session.clear()
 
-  #  if request.method == "GET":
-   #     return render_template("login.html")
+    if request.method == "GET":
+        return render_template("login.html")
 
 @app.route("/register", methods=['GET','POST'])
 def register():
@@ -47,7 +47,7 @@ def register():
 
         try:
             new_user = db.execute("INSERT INTO users(username, hash) VALUES(?, ?)", username, hash)
-            db.commit()
+            
         except:
             message = "Username already exist"
             return render_template("message.html", message = message)
