@@ -8,6 +8,8 @@ app.config["SESSION_PERMANT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
+db = SQL("sqlite:///project.db")
+
 @app.route("/")
 def index():
     return render_template("layout.html")
@@ -15,4 +17,3 @@ def index():
 @app.route("/login")
 def login():
     session.clear()
-    
