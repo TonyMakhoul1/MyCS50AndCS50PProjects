@@ -102,14 +102,18 @@ def buy():
 
         name_car = car[0]["name"]
         price_car = car[0]["price"]
-        
+        quantity_car = car[0]["quantity"]
+
 
         user_cash_db = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
         user_cash = user_cash_db[0]["cash"]
+        if quantity_car == 0:
+            message3 = "Sorry, No More Stock From This Car"
+            return render_template("message.html", message = message3)
 
         if user_cash < price_car:
-            message3 = "Sorry, You Don't Have Much Money!!"
-            return render_template("message.html", message = message3)
+            message4 = "Sorry, You Don't Have Much Money!!"
+            return render_template("message.html", message = message4)
         update_cash = user_cash - price_car
 
         db.execute("UPDATE SET cash = ? WHERE id = ?", update_cash, user_id)
