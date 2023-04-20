@@ -209,6 +209,7 @@ def sell():
         #if user_cash < price_car:
             #message4 = "Sorry, You Don't Have Much Money!!"
             #return render_template("message.html", message = message4)
+            
         update_cash = user_cash - price_car
         quantity = quantity_car - 1
         #quantity_car_user_db = db.execute("SELECT * FROM user_car WHERE user_id = ? AND name_car = ?", user_id, name)
