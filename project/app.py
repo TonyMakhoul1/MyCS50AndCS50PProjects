@@ -124,11 +124,11 @@ def buy():
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
         db.execute("UPDATE cars SET quantity = ? WHERE name = ?", quantity, name)
         db.execute("INSERT INTO user_car (user_id, name_car) VALUES(?, ?)", user_id, name)
-        db.execute("UPDATE user_car SET quantity_car = ? WHERE id = ?", +1, user_id)
+        db.execute("UPDATE user_car SET quantity_car = quantity_car + 1 WHERE id = ? AND name_car = ?", user_id, name)
 
         message5 = "Congratulations, You Have Bought The Car!"
         return render_template("message.html", message = message5)
-        
+
 
 
 
