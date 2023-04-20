@@ -130,6 +130,10 @@ def buy():
         return render_template("message.html", message = message5)
 
 
+@app.route("/Add_car", methods=['GET','POST'])
+def buy():
+
+
 
 
 
