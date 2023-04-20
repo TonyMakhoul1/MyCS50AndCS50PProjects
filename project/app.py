@@ -83,5 +83,40 @@ def logout():
     return redirect("/")
 
 
+@app.route("/buy", methods=['GET','POST'])
+def buy():
+    if request.method == "GET":
+        return render_template("buy.html")
+    else:
+        name = request.form.get("namecar")
+
+        if not name:
+            message1 = "Give A Name Please"
+            return render_template("message.html", message = message1)
+        user_id = session["user_id"]
+
+        car = db.execute("SELECT * FROM cars WHERE name = ?", name)
+
+        if not car:
+            message2 = "Sorry, This Car Is Not Available"
+
+        name_car = car[0]["name"]
+        price_car = car[0]["price"]
+
+        user_cash_db = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        user_cash = user_cash_db[0]["cash"]
+
+        if user_cash < price_car:
+            message3 = "Sorry, You Don't Have Much Money!!"
+            return render_template("message.html", message = message3)
+        update_cash = user_cash - price_car
+
+        db.execute("UPDATE SET cash = ? WHERE id = ?", update_cash, user_id)
+        db.execute("UPDATE SET quantity = ? WHERE name = ?", (-1)*quantity, name)
+
+        flash("Congratulations, You Have Bought The Car!")
+        return redirect("/")
+
+
 
 
