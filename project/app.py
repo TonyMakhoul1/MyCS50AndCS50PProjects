@@ -148,7 +148,16 @@ def add_car():
 
         message2 = "Thank You, For Adding This Car In Our Stock!"
         return render_template("message.html", message = message2)
-    
+
+@app.route("/add_cash", methods=['GET','POST'])
+def add_cash():
+    if request.method == "GET":
+        return render_template("add_cash.html")
+    else:
+        
+
+
+
 
 
 
