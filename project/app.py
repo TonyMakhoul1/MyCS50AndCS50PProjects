@@ -119,11 +119,11 @@ def buy():
         quantity = quantity_car - 1
         quantity_car_user_db = db.execute("SELECT * FROM user_car WHERE user_id = ? AND name_car = ?", user_id, name)
         quantity_car_user = quantity_car_user_db[0]["quantity_car"]
-        quantity_car_user = quantity_car_user + 1
+        quantity_car_user_new = quantity_car_user + 1
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
         db.execute("UPDATE cars SET quantity = ? WHERE name = ?", quantity, name)
-        db.execute("INSERT INTO user_car (user_id, name_car, quantity_car) VALUES(?, ?, ?)", user_id, name, quantity_car_user)
+        db.execute("INSERT INTO user_car (user_id, name_car, quantity_car) VALUES(?, ?, ?)", user_id, name, quantity_car_user_new)
         #db.execute("UPDATE user_car SET quantity_car = quantity_car + 1 WHERE user_id = ? AND name_car = ?", user_id, name_car)
 
         message5 = "Congratulations, You Have Bought The Car!"
