@@ -136,6 +136,11 @@ def add_car():
         return render_template("add_car.html")
     else:
         add_car = request.form.get("add_car")
+
+        car = ("SELECT * FROM cars WHERE name = ?", add_car)
+        if not car:
+            message1 = "Sorry, In Our Stock We Don't Get This car"
+            return render_template("message.html", message = message1)
         
 
 
