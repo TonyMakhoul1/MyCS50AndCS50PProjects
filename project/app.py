@@ -137,11 +137,19 @@ def add_car():
     else:
         add_car = request.form.get("add_car")
 
-        car = ("SELECT * FROM cars WHERE name = ?", add_car)
-        if not car:
+        car_db = db.execute("SELECT * FROM cars WHERE name = ?", add_car)
+        if not car_db:
             message1 = "Sorry, In Our Stock We Don't Get This car"
             return render_template("message.html", message = message1)
-        
+        quantity_car_db = car_db[0]["quantity"]
+        quantity_car = quantity_car_db + 1
+
+        db.execute("UPDATE cars SET quantity = ? WHERE name = ?", quantity_car, add_car)
+
+        message2 = "Thank You, For Adding This Car In Our Stock!"
+        return render_template("message.html", message = message2)
+    
+
 
 
 
