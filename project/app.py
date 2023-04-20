@@ -177,7 +177,12 @@ def add_cash():
 
 
 
-
+@app.route("/sell", methods=['GET','POST'])
+def sell():
+    if request.method == "GET":
+        return render_template("sell.html")
+    else:
+        
 
 
 
