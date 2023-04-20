@@ -130,8 +130,13 @@ def buy():
         return render_template("message.html", message = message5)
 
 
-@app.route("/Add_car", methods=['GET','POST'])
-def buy():
+@app.route("/add_car", methods=['GET','POST'])
+def add_car():
+    if request.method == "GET":
+        return render_template("add_car.html")
+    else:
+        add_car = 
+
 
 
 
