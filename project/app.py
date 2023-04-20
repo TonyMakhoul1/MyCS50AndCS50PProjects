@@ -120,6 +120,7 @@ def buy():
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
         db.execute("UPDATE cars SET quantity = ? WHERE name = ?", quantity, name)
+        db.execute("INSERT INTO ")
 
         flash("Congratulations, You Have Bought The Car!")
         return redirect("/")
