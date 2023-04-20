@@ -159,6 +159,9 @@ def add_cash():
         if not add_cash:
             message1 = "You Must Give A Number"
             return render_template("message.html", message = message1)
+        if add_cash > 10000:
+            message2 = "Please You Can't Add More Than 10K"
+            return render_template("message.html", message = message2)
         user_id = session["user_id"]
 
         user_cash_db = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
@@ -166,7 +169,7 @@ def add_cash():
 
         update_cash = user_cash + add_cash
 
-        db.execute("UPDATE users SET")
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
 
 
 
