@@ -154,11 +154,12 @@ def add_cash():
     if request.method == "GET":
         return render_template("add_cash.html")
     else:
-        add_cash = int(request.form.get("add_cash"))
+        add_cashs = request.form.get("add_cash")
 
-        if not add_cash:
+        if not add_cashs:
             message1 = "You Must Give A Number"
             return render_template("message.html", message = message1)
+        add_cash = int(add_cashs)
         user_id = session["user_id"]
         if add_cash > 10000:
             message2 = "Please You Can't Add More Than 10K"
