@@ -172,8 +172,11 @@ def add_cash():
         update_cash = user_cash + add_cash
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
+        message3 = "Congratulations, Your Ammount Has Been Upgraded"
+        return render_template("message.html", message = message3)
 
-        return redirect("/")
+
+
 
 
 
