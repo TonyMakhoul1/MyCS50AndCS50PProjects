@@ -99,6 +99,7 @@ def buy():
 
         if not car:
             message2 = "Sorry, This Car Is Not Available"
+            return render_template("message.html", message = message2)
 
         name_car = car[0]["name"]
         price_car = car[0]["price"]
