@@ -202,13 +202,13 @@ def sell():
 
         user_cash_db = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
         user_cash = user_cash_db[0]["cash"]
-        if quantity_car <= 0 :
-            message3 = "Sorry, No More Stock From This Car"
-            return render_template("message.html", message = message3)
+        #if quantity_car <= 0 :
+            #message3 = "Sorry, No More Stock From This Car"
+            #return render_template("message.html", message = message3)
 
-        if user_cash < price_car:
-            message4 = "Sorry, You Don't Have Much Money!!"
-            return render_template("message.html", message = message4)
+        #if user_cash < price_car:
+            #message4 = "Sorry, You Don't Have Much Money!!"
+            #return render_template("message.html", message = message4)
         update_cash = user_cash - price_car
         quantity = quantity_car - 1
         #quantity_car_user_db = db.execute("SELECT * FROM user_car WHERE user_id = ? AND name_car = ?", user_id, name)
