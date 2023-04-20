@@ -116,9 +116,10 @@ def buy():
             message4 = "Sorry, You Don't Have Much Money!!"
             return render_template("message.html", message = message4)
         update_cash = user_cash - price_car
+        quantity = quantity_car - 1
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
-        db.execute("UPDATE cars SET quantity = ? WHERE name = ?", (-1)*quantity_car, name)
+        db.execute("UPDATE cars SET quantity = ? WHERE name = ?", quantity, name)
 
         flash("Congratulations, You Have Bought The Car!")
         return redirect("/")
