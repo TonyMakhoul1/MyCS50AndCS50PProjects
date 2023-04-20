@@ -135,7 +135,8 @@ def add_car():
     if request.method == "GET":
         return render_template("add_car.html")
     else:
-        add_car = 
+        add_car = request.form.get("add_car")
+        
 
 
 
