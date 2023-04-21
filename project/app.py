@@ -164,6 +164,10 @@ def add_cash():
         if add_cash > 10000:
             message2 = "Please You Can't Add More Than 10K"
             return render_template("message.html", message = message2)
+        if add_cash < 0:
+            message3 = "No Negative ammounts"
+            return render_template("message.html", message = message3)
+
 
 
         user_cash_db = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
@@ -172,8 +176,8 @@ def add_cash():
         update_cash = user_cash + add_cash
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
-        message3 = "Congratulations, Your Ammount Has Been Upgraded"
-        return render_template("message.html", message = message3)
+        message4 = "Congratulations, Your Ammount Has Been Upgraded"
+        return render_template("message.html", message = message4)
 
 
 
@@ -192,7 +196,7 @@ def sell():
         car = db.execute("SELECT * FROM cars WHERE name = ?", name)
 
         if not car:
-            message2 = "Sorry, You Don't Have This Car"
+            message2 = "Sorry, We Don't Have This Car"
             return render_template("message.html", message = message2)
 
         name_car = car[0]["name"]
@@ -212,9 +216,12 @@ def sell():
 
 
         quantity_car_user_db = db.execute("SELECT * FROM user_car WHERE user_id = ? AND name_car = ?", user_id, name)
+        if not quantity_car_user_db:
+            message3 = "You Have Not Purshased This Car Yet"
+            return render_template("message.html", message = message3)
         quantity_car_user = quantity_car_user_db[0]["quantity_car"]
         if quantity_car_user <= 0:
-            message4 = "You Don't Have This Car"
+            message4 = "Sorry, You Don't Have This Car"
             return render_template("message.html", message = message4)
         #quantity_car_user = quantity_car_user - 1
         update_cash = user_cash + price_car
@@ -225,7 +232,7 @@ def sell():
         #db.execute("INSERT INTO user_car (user_id, name_car) VALUES(?, ?)", user_id, name)
         db.execute("UPDATE user_car SET quantity_car = quantity_car - 1 WHERE user_id = ? AND name_car = ?", user_id, name)
 
-        message5 = "Your Car Has Been Solded!"
+        message5 = "Your Car Has Been Sold!"
         return render_template("message.html", message = message5)
 
 
