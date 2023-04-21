@@ -236,8 +236,6 @@ def sell():
         return render_template("message.html", message = message5)
 
 
-
-
 @app.route("/store")
 def store():
     return render_template("store.html")
