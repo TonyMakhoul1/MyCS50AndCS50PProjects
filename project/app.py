@@ -239,7 +239,8 @@ def sell():
 
 
 @app.route("/store")
-def index():
+def store
+():
     return render_template("store.html")
 
 
