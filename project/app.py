@@ -165,7 +165,7 @@ def add_cash():
             message2 = "Please You Can't Add More Than 10K"
             return render_template("message.html", message = message2)
         if add_cash < 0:
-            message3 = "No Negative ammounts"
+            message3 = "No Negative amounts"
             return render_template("message.html", message = message3)
 
 
@@ -176,7 +176,7 @@ def add_cash():
         update_cash = user_cash + add_cash
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", update_cash, user_id)
-        message4 = "Congratulations, Your Ammount Has Been Upgraded"
+        message4 = "Congratulations, Your Amount Has Been Upgraded"
         return render_template("message.html", message = message4)
 
 
