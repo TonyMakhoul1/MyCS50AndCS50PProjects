@@ -9,7 +9,7 @@ def dollars_to_float(d):
     # TODO
 
     float(d)
-    round(d, 2)
+    format(d, 2)
 
 
 
@@ -17,7 +17,6 @@ def dollars_to_float(d):
 
 def percent_to_float(p):
     # TODO
-    print("%", end="")
     p = x / 100
     return p
 
