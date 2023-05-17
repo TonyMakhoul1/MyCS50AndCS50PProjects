@@ -1,17 +1,16 @@
 def main():
     text = input("")
     convert(text)
-    
+
 
 
 def convert(text):
 
-    if ':)' in text :
+    if ':)' or ':(' in text :
+        if ':)':
         x = text.replace(":)","🙂")
         print(x)
-
-
-    if ':(' in text :
+        if ':(':
         y = text.replace(":(","🙁")
         print(y)
 
