@@ -7,7 +7,7 @@ def main():
 
 def dollars_to_float(d):
     # TODO
-    x = float(input("$"))
+    x = float(input("$")).format()
 
 
 
