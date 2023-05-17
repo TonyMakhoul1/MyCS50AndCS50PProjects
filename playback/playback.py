@@ -1,2 +1,3 @@
 text = input("")
-print(f"{text}", sep='...')
+text = text.replace(" ", "...")
+print(text)
