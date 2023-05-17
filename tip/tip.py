@@ -7,10 +7,7 @@ def main():
 
 def dollars_to_float(d):
     # TODO
-    x = float(input("$"))
-    x = round(x, 2)
-    d = x
-    return d
+    float(d)
 
 
 
