@@ -5,11 +5,9 @@ def main():
 
 
 def convert(text):
-
-
-    text.replace(":)","🙂")
-    text.replace(":(","🙁")
-
+    x = text.replace(":)","🙂")
+    y = text.replace(":(","🙁")
+    
 
 
 main()
