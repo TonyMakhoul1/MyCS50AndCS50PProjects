@@ -1,13 +1,17 @@
 def main():
-
-def convert():
     text = input("")
+    convert(text)
+    print(text)
+
+def convert(text):
     x = text.find(":)")
     if x:
-        newx = x.replace(":")
-        print()
+        newx = text.replace(":)","🙂")
+        print(newx)
+
     y = text.find(":(")
     if y:
-        newy = y.replace("🙁")
+        newy = text.replace(":(","🙁")
+        print(newy)
 
-
+main()
