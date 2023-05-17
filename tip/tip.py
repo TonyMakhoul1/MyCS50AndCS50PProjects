@@ -9,7 +9,7 @@ def dollars_to_float(d):
     # TODO
 
     float(d)
-    format(d, 2)
+
 
 
 
