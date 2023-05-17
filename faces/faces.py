@@ -2,4 +2,5 @@ def main():
 
 def convert():
     text = input("")
-    text = text.
+    x = text.find(":)")
+    
