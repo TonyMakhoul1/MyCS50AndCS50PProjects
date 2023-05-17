@@ -1,2 +1,2 @@
 text = input("")
-print(text, sep="...")
+print(f"{text}", sep='...')
