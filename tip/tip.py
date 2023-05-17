@@ -8,6 +8,7 @@ def main():
 def dollars_to_float(d):
     # TODO
     float(d)
+    round(d, 2)
 
 
 
