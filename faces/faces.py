@@ -1,4 +1,5 @@
 def main():
 
 def convert():
-    input
+    text = input("")
+    
