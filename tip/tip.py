@@ -9,12 +9,14 @@ def dollars_to_float(d):
     # TODO
     x = float(input("$"))
     x = round(x, 2)
-    
+    d = x
+    return d
 
 
 
 def percent_to_float(p):
     # TODO
+    
 
 
 main()
