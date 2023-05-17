@@ -6,13 +6,10 @@ def main():
 
 def convert(text):
 
-    if ':)' in text :
-        x = text.replace(":)","🙂")
-        print(x)
+
+    text.replace(":)","🙂")
+    text.replace(":(","🙁")
 
 
-    if ':(' in text:
-        y = text.replace(":(","🙁")
-        print(y)
 
 main()
