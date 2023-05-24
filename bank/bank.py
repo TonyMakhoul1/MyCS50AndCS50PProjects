@@ -1,4 +1,4 @@
 message = input("Greeting: ")
 
-if message[0].capitalize() == 'H':
+if message == "Hello":
     print("0$", end="")
