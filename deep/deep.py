@@ -3,10 +3,10 @@ def main():
     yes_or_no(question)
 
 
-def yes_or_no(question):
+def yes_or_no(n):
         yes = "yes"
         no = "no"
-        if question == "42" | question == "forty-two" | question == "forty two" :
+        if n == "42" | n == "forty-two" | n == "forty two" :
             return yes
         else:
             return no
