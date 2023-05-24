@@ -5,7 +5,7 @@ def main():
 
 def yes_or_no(n):
         h = "42"
-        if n == "42" or n == "forty-two" or n == "forty two" or n == "FoRty TwO" or h.rstrip() or h.lstrip():
+        if n == "42" or n == "forty-two" or n == "forty two" or n == "FoRty TwO" or n == h.rstrip() or n == h.lstrip():
             print("yes", end="")
             return
         else:
