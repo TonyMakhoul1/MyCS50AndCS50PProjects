@@ -1,4 +1,6 @@
 expression = input("Expression: ")
 x, y, z = expression.split(" ")
 
-result = x y z
+if y == "+":
+    result = x + z
+    float(result)
