@@ -1,5 +1,5 @@
 message = input("File name: ")
-if ".jpg" or "jpeg" in message:
+if ".jpg" or ".jpeg" in message:
     print("image/jpeg")
 elif ".gif" in message:
     print("image/gif")
