@@ -7,9 +7,9 @@ def yes_or_no(n):
         yes = "yes"
         no = "no"
         if n == "42" or n == "forty-two" or n == "forty two" :
-            print("yes")
+            print("yes", end="")
             return
         else:
-            print("no")
-            return 
+            print("no", end="")
+            return
 main()
