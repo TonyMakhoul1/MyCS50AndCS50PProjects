@@ -1,1 +1,1 @@
-message = input("")
+message = input("Greeting: ")
