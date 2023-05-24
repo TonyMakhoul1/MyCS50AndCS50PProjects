@@ -12,7 +12,7 @@ elif ".pdf" in message:
 elif ".txt" in message:
     print("text/plain")
 elif ".zip" in message:
-    print("application.zip")
+    print("application/zip")
 elif ".PDF" in message:
     print("application/pdf")
 else:
