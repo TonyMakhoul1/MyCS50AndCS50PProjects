@@ -1,7 +1,7 @@
 def main():
     expression = input("Expression: ")
     x, y, z = expression.split(" ")
-    int (x, y)
+    
     if y == "+":
         result = float(x + z)
         #round(result,1)
