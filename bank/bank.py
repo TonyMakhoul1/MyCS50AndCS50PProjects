@@ -1,4 +1,7 @@
 message = input("Greeting: ")
 
-if message == "Hello":
-    print("0$", end="")
+if message.capitalize() == "Hello":
+    print("$0", end="")
+elif message[0] == "H":
+    print("$20")
+
