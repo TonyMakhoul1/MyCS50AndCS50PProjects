@@ -1,27 +1,23 @@
 def main():
     expression = input("Expression: ")
     x, y, z = expression.split(" ")
-
+    int (x, y)
     if y == "+":
-        result = int(x + z)
-        float(result)
+        result = float(x + z)
         #round(result,1)
         print(result)
     elif y == "-":
-        result = int(x - z)
-        float(result)
+        result = float(x - z)
         #round(result,1)
         print(result)
     elif y == "/":
         z != 0
-        result = int(x / z)
-        float(result)
+        result = float(x / z)
         #round(result,1)
         print(result)
     elif y == "%":
         z != 0
-        result = int(x % z)
-        float(result)
+        result = float(x % z)
         #round(result,1)
         print(result)
 
