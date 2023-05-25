@@ -1,5 +1,6 @@
 def main():
-    ...
+    time = input("What time is it? ")
+
 
 
 def convert(time):
@@ -8,7 +9,15 @@ def convert(time):
     minutes = float(minutes)
     if minutes == "60":
         hours = hours + 1
-    
+        minutes = 0
+    if hours == "7" and (minutes <= 59 or minutes >= 00):
+        print("breakfast time")
+    if hours == "8" and minutes == "00":
+        print("breakfast time")
+    if hours == "12" and (minutes <= 59 or minutes >= 00):
+        print("dinner time")
+    if hours == "13" and minutes == "00":
+    new_time = hours + ":" + minutes
 
 if __name__ == "__main__":
     main()
