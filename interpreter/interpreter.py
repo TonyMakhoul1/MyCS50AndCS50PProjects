@@ -10,6 +10,9 @@ def main():
     elif y == "-":
         result = float(x - z)
         print(result)
+    elif y == "*":
+        result = float(x * z)
+        print(result)
     elif y == "/":
         z != 0
         result = float(x / z)
