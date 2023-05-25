@@ -15,8 +15,13 @@ def convert(time):
     if hours == "8" and minutes == "00":
         print("breakfast time")
     if hours == "12" and (minutes <= 59 or minutes >= 00):
-        print("dinner time")
+        print("lunch time")
     if hours == "13" and minutes == "00":
+        print("lunch time")
+    if hours == "18" and (minutes <= 59 or minutes >= 00):
+        print("dinner time")
+    if hours == "19" and minutes == "00":
+        
     new_time = hours + ":" + minutes
 
 if __name__ == "__main__":
