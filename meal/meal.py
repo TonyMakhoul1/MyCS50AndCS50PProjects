@@ -21,8 +21,8 @@ def convert(time):
     if hours == "18" and (minutes <= 59 or minutes >= 00):
         print("dinner time")
     if hours == "19" and minutes == "00":
-        
-    new_time = hours + ":" + minutes
+        print("dinner time")
+    
 
 if __name__ == "__main__":
     main()
