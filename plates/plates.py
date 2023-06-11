@@ -12,7 +12,7 @@ def is_valid(s):
     if s[0:2].isalpha() == False:
         return False
     for i in s:
-        if 
+        if i.isalpha == False
 
 
 
