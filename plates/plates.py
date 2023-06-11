@@ -20,7 +20,7 @@ def is_valid(s):
                 break
         i += i
     for c in s:
-        if c in [",", " ", "?", "!"]:
+        if c in [".", " ", "?", "!"]:
             return False
     return True
 
