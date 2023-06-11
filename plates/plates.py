@@ -7,7 +7,8 @@ def main():
 
 
 def is_valid(s):
-    if s
+    while len(s) <= 6:
+        
 
 
 main()
