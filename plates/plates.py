@@ -10,7 +10,7 @@ def is_valid(s):
     if len(s) > 6:
         return False
     else:
-        if s[0:1].isalpha()
+        if s[0:2].isalpha()
 
 
 
