@@ -18,7 +18,11 @@ def is_valid(s):
                 return False
             else:
                 break
-            
+        i += i
+    for c in s:
+        if c in [",", " ", "?", "!"]:
+            return False
+    return True
 
 
 
