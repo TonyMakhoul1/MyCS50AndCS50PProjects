@@ -8,8 +8,10 @@ def main():
 
 def is_valid(s):
     if len(s) > 6:
-        print("Invalid")
-    
+        return False
+    else:
+        if s[0:1].isalpha()
+
 
 
 
