@@ -5,4 +5,5 @@ while amount > 0:
     insert = int(input("Insert Coin: "))
     if insert in [5, 10, 20]:
         amount = amount - insert
-        
+
+Change_Owed = 
