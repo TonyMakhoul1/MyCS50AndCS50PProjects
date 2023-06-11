@@ -12,7 +12,13 @@ def is_valid(s):
     if s[0:2].isalpha() == False:
         return False
     i = 0
-    while 
+    while i < len(s):
+        if s.isalpha() == False:
+            if s == '0':
+                return False
+            else:
+                break
+            
 
 
 
