@@ -5,4 +5,4 @@ fruits = {
 }
 item = input("Item: ")
 if item in fruits:
-    print("Calories:", item)
+    print("Calories:", fruits[item])
