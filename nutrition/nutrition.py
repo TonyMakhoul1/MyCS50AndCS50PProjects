@@ -4,6 +4,6 @@ fruits = {
     "Sweet Cherries": "100"
 }
 item = input("Item: ")
-for item in fruits:
-    if item in fruits:
+for i in fruits:
+    if item[i] in fruits:
         print("Calories:", item)
