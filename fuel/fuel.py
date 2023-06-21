@@ -10,4 +10,6 @@ while True:
         print("x or y is not an integer")
     except ZeroDivisionError:
         print ("denominater can't be 0")
-    
+    else:
+        if x < y:
+            x,y
