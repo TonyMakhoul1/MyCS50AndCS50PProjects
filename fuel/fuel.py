@@ -6,4 +6,8 @@ y = int(y)
 while True:
     try:
         fraction = input("Fraction: ")
-    except 
+    except ValueError:
+        print("x or y is not an integer")
+    except ZeroDivisionError:
+        print ("denominater can't be 0")
+    
