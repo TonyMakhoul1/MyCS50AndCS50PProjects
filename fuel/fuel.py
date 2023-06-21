@@ -15,4 +15,5 @@ while True:
         print ("denominater can't be 0")
     else:
         if x < y:
-            if 
+            if fraction == 1/4:
+                print("25%")
