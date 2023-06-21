@@ -6,3 +6,4 @@ y = int(y)
 while True:
     try:
         fraction = input("Fraction: ")
+    except 
