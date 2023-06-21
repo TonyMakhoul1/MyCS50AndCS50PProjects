@@ -15,4 +15,4 @@ while True:
         print ("denominater can't be 0")
     else:
         if x < y:
-            x,y
+            if 
