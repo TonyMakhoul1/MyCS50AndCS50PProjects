@@ -14,11 +14,11 @@ while True:
     try:
         item = input("Item: ")
     except EOFError:
-        item = input("Item: ")
+        quit()
     else:
         if item == "":
             quit()
-        elif item in dict:
+        elif item. in dict:
             total = total + dict[item]
             print("Total: $",end="")
             print(total)
