@@ -18,3 +18,5 @@ else:
     if item in dict:
         print("$",end="")
         print(dict[item])
+    else:
+        item = input("Item: ")
