@@ -13,7 +13,7 @@ dict ={
 try:
     item = input("Item: ")
 except EOFError:
-    item = input("Item: ")
+    quit()
 else:
     if item in dict:
         print("$",end="")
