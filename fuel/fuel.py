@@ -13,6 +13,12 @@ except ZeroDivisionError:
     x,y = fraction.split("/")
     x = int(x)
     y = int(y)
+except x > y:
+    fraction = input("Fraction: ")
+    x,y = fraction.split("/")
+    x = int(x)
+    y = int(y)
+
 else:
     if x == 0:
         print("E")
