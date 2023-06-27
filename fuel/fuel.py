@@ -9,12 +9,6 @@ except (ValueError, ZeroDivisionError):
     x = int(x)
     y = int(y)
 
-except x > y:
-    fraction = input("Fraction: ")
-    x,y = fraction.split("/")
-    x = int(x)
-    y = int(y)
-
 else:
     if x == 0:
         print("E")
@@ -28,6 +22,8 @@ else:
         else:
             print(z,end ="%")
             print()
-    #elif x > y:
-
-
+    elif x > y:
+        fraction = input("Fraction: ")
+        x,y = fraction.split("/")
+        x = int(x)
+        y = int(y)
