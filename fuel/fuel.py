@@ -1,19 +1,26 @@
-fraction = input("Fraction: ")
-x,y = fraction.split("/")
-x = int(x)
-y = int(y)
+try:
+    fraction = input("Fraction: ")
+    x,y = fraction.split("/")
+    x = int(x)
+    y = int(y)
+except ValueError:
+    fraction = input("Fraction: ")
+except ZeroDivisionError:
+    fraction = input("Fraction: ")
 
-while True:
-    try:
-        fraction = input("Fraction: ")
-        x,y = fraction.split("/")
-        x = int(x)
-        y = int(y)
-    except ValueError:
-        print("x or y is not an integer")
-    except ZeroDivisionError:
-        print ("denominater can't be 0")
-    else:
-        if x < y:
-            if fraction == 1/4:
-                print("25%")
+else:
+    if x == 0:
+        print("E")
+    elif x < y or x == y:
+        z = (x / y) * 100
+        z = round(z)
+        if z <= 1:
+            print("E")
+        elif z >= 99:
+            print("F")
+        else:
+            print(z,end ="%")
+            print()
+    #elif x > y:
+
+
