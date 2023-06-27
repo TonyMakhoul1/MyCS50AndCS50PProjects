@@ -12,7 +12,7 @@ dict ={
 total = 0
 while True:
     try:
-        item = input("Item: ")
+        item = input("Item: ").title()
     except EOFError:
         quit()
     else:
@@ -23,4 +23,4 @@ while True:
             print("Total: $",end="")
             print(total)
         else:
-            item = input("Item: ")
+            item = input("Item: ").title()
