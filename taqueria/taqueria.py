@@ -18,7 +18,7 @@ while True:
     else:
         if item == "":
             quit()
-        elif item.upper() in dict:
+        elif item in dict:
             total = total + dict[item]
             print("Total: $",end="")
             print(total)
