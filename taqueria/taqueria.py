@@ -9,7 +9,7 @@ dict ={
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-total = 0.00
+total = 0
 while True:
     try:
         item = input("Item: ").title()
@@ -21,6 +21,6 @@ while True:
         elif item in dict:
             total = total + dict[item]
             print("Total: $",end="")
-            print(total)
+            print(".2f".format(total))
         else:
             item = input("Item: ").title()
