@@ -21,6 +21,6 @@ while True:
         elif item in dict:
             total = total + dict[item]
             print("Total: $",end="")
-            print(".2f".format(total))
+            print("{:.2f}".format(total))
         else:
             item = input("Item: ").title()
