@@ -3,12 +3,17 @@ try:
     x,y = fraction.split("/")
     x = int(x)
     y = int(y)
-except (ValueError, ZeroDivisionError):
+except ValueError:
     fraction = input("Fraction: ")
     x,y = fraction.split("/")
     x = int(x)
     y = int(y)
 
+except ZeroDivisionError:
+    fraction = input("Fraction: ")
+    x,y = fraction.split("/")
+    x = int(x)
+    y = int(y)
 else:
     if x == 0:
         print("E")
