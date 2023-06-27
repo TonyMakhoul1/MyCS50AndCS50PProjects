@@ -3,16 +3,12 @@ try:
     x,y = fraction.split("/")
     x = int(x)
     y = int(y)
-except ValueError:
+except (ValueError,ZeroDivisionError):
     fraction = input("Fraction: ")
     x,y = fraction.split("/")
     x = int(x)
     y = int(y)
-except ZeroDivisionError:
-    fraction = input("Fraction: ")
-    x,y = fraction.split("/")
-    x = int(x)
-    y = int(y)
+
 except x > y:
     fraction = input("Fraction: ")
     x,y = fraction.split("/")
