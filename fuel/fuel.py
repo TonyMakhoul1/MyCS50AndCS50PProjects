@@ -3,7 +3,7 @@ try:
     x,y = fraction.split("/")
     x = int(x)
     y = int(y)
-except (ValueError,ZeroDivisionError):
+except (ValueError, ZeroDivisionError):
     fraction = input("Fraction: ")
     x,y = fraction.split("/")
     x = int(x)
