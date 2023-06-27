@@ -11,8 +11,9 @@ dict ={
 }
 
 try:
-    input("Item: ")
+    item = input("Item: ")
 except EOFError:
-    input("Item: ")
+    item = input("Item: ")
 else:
-    
+    if item in dict:
+        
