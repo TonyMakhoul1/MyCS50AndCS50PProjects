@@ -16,4 +16,5 @@ except EOFError:
     item = input("Item: ")
 else:
     if item in dict:
-        
+        print("$",end="")
+        print(dict[item])
