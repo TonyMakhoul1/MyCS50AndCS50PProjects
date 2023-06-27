@@ -16,7 +16,7 @@ while True:
         item = input("Item: ")
     else:
         if item == "":
-            exit()
+            quit()
         elif item in dict:
             print("$",end="")
             print(dict[item])
