@@ -9,5 +9,5 @@ while True:
     except EOFError:
         for item in dict:
             print(dict[item], item.upper())
-            break
+        break
 
