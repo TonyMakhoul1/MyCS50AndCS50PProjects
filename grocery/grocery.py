@@ -1,7 +1,5 @@
 while True:
     try:
-        item = input("")
+        item = input()
     except EOFError:
-        exit()
-    else:
         
