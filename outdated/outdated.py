@@ -31,4 +31,4 @@ while True:
             print()
             pass
 
-print(f{"year"-"month"-"day"})
+print(f{"year"}-{""})
