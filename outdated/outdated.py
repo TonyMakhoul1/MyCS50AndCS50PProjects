@@ -31,4 +31,4 @@ while True:
             print()
             pass
 
-print(f"{year}-{month:02}")
+print(f"{year}-{month:02}-{day:02}")
