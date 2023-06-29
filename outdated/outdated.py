@@ -12,6 +12,6 @@ month = [
     "November",
     "December"
 ]
+date = input("Date: ")
 try:
-    date = input("Date: ")
     
