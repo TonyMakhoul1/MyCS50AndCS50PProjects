@@ -7,7 +7,7 @@ while True:
         else:
             dict[item] = 1
     except EOFError:
-        for item in sorted(dict.keys()):
-            print(dict[item], item.upper())
+        for d in sorted(dict.keys()):
+            print(dict[d], d.upper())
         break
 
