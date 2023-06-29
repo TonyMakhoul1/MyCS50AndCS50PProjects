@@ -25,10 +25,10 @@ while True:
                 if lamonth == months[i]:
                     lamonth = i + 1
             laday = laday.replace(",", "")
-            if(lamonth <= 12 and lamonth >= 1) and (laday <= 31 and laday >= 1):
+            if(int(lamonth) <= 12 and int(lamonth) >= 1) and (int(laday) <= 31 and int(laday) >= 1):
                 break
         except:
             print()
             pass
 
-print(f"{year}-{month:02}-{day:02}")
+print(f"{year}-{int(month):02}-{int(day):02}")
