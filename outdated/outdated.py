@@ -1,4 +1,4 @@
-month = [
+months = [
     "January",
     "February",
     "March",
@@ -14,4 +14,5 @@ month = [
 ]
 date = input("Date: ")
 try:
+    month, day, year = date.split("/")
     
