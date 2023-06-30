@@ -1,9 +1,8 @@
 import emoji
-
+list = emoji
 text = input("Input: ")
 text.replace("_","")
 
-for i in emoji:
-    if emoji[i] == text:
-        print("Output: " + emoji[i])
-        
+for i in list:
+    if list[i] == text:
+        print("Output: " + list[i])
