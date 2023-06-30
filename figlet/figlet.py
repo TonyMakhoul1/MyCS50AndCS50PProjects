@@ -18,10 +18,11 @@ figlet.getFonts()
 if random == False:
     try:
         figlet.setFont(font = sys.argv[2])
-        print(figlet.renderText(input))
     except:
         print("Invalid usage")
         sys.exit(1)
+    else:
+        print(figlet.renderText(input))
 
 else:
     nfont = figlet.getFonts()
