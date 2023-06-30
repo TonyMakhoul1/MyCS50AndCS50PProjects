@@ -5,13 +5,15 @@ import random
 figlet = Figlet()
 
 if len(sys.argv) == 1:
-    afont = random.choice(fonts)
+    random = True
 elif len(sys.argv) == 3 and (sys.argv[1] == "-f" or sys.argv[1] == "--font"):
-
+    random = False
 else:
     sys.exit(1)
 
 input = input("Input: ")
-fonts = figlet.getFonts()
+figlet.getFonts()
 
+if random == False:
+    figlet.setfont(font = sys.argv[2])
 
