@@ -16,4 +16,4 @@ figlet.getFonts()
 
 if random == False:
     figlet.setfont(font = sys.argv[2])
-
+    print(figlet.renderText(input))
