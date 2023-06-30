@@ -1,6 +1,6 @@
 from pyfiglet import Figlet
 import sys
-import random
+from random import choice
 
 figlet = Figlet()
 
@@ -16,4 +16,9 @@ figlet.getFonts()
 
 if random == False:
     figlet.setFont(font = sys.argv[2])
+    print(figlet.renderText(input))
+if random == True:
+    nfont = figlet.getFonts()
+    randfont = choice(nfont)
+    figlet.setFont(font = randfont)
     print(figlet.renderText(input))
