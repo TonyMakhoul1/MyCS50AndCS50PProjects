@@ -22,7 +22,7 @@ if random == False:
         print("Invalid usage")
         sys.exit(1)
 
-if random == True:
+else:
     nfont = figlet.getFonts()
     randfont = choice(nfont)
     figlet.setFont(font = randfont)
