@@ -9,6 +9,7 @@ if len(sys.argv) == 1:
 elif len(sys.argv) == 3 and (sys.argv[1] == "-f" or sys.argv[1] == "--font"):
     random = False
 else:
+    print("Invalid usage")
     sys.exit(1)
 
 input = input("Input: ")
