@@ -15,5 +15,5 @@ input = input("Input: ")
 figlet.getFonts()
 
 if random == False:
-    figlet.setfont(font = sys.argv[2])
+    figlet.setFont(font = sys.argv[2])
     print(figlet.renderText(input))
