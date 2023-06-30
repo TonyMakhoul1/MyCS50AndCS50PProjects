@@ -4,4 +4,5 @@ import sys
 input = input("Input: ")
 fonts = figlet.getFonts()
 
-if
+if len(sys.argv) == 0:
+    
