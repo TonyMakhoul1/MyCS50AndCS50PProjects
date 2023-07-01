@@ -8,8 +8,8 @@ def main():
 def get_level():
     while True:
         try:
-            level = input("Level: ")
-            if level <= 3 or level >= 1:
+            level = int(input("Level: "))
+            if level <= 3 and level >= 1:
                 break
         except:
             pass
