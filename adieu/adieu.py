@@ -15,8 +15,7 @@ list = []
 while True:
     try:
         str = input("Input: ")
-        for i in list:
-            list[i] = str
+        list.append(str)
     except EOFError:
         mylist = p.join(list)
         print("Adieu, adieu, to", mylist)
