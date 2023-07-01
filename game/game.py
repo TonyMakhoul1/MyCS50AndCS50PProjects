@@ -4,4 +4,5 @@ while True:
         level = input("Level: ")
         level = random.randint(0,100)
     except:
+        print()
         exit()
