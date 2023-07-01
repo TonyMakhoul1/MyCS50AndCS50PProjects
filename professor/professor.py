@@ -20,7 +20,8 @@ def get_level():
 def generate_integer(level):
     while True:
         try:
-            input = input("")
+            input = input("generate level: ")
+            
 
 
 
