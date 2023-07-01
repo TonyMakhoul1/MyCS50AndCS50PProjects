@@ -21,10 +21,11 @@ if random == False:
     except:
         print("Invalid usage")
         sys.exit(1)
-input = input("Input: ")
+
 else:
     nfont = figlet.getFonts()
     randfont = choice(nfont)
     figlet.setFont(font = randfont)
+input = input("Input: ")
 
 print(figlet.renderText(input))
