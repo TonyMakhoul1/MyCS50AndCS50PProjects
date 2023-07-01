@@ -6,7 +6,9 @@ def main():
 
 
 def get_level():
-    level = input("Level: ")
+while True:
+    try:
+        
 
 
 
