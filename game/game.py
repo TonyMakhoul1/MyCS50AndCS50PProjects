@@ -21,3 +21,5 @@ while True:
             else:
                 print("Just right!")
                 break
+    except:
+        pass
