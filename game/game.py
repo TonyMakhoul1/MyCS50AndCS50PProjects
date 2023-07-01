@@ -2,20 +2,20 @@ import random
 while True:
     try:
         level = int(input("Level: "))
-        #level = random.randint(0,100)
-
+        if level > 0:
+            break
     except:
         pass
 
-number = 
+number = random.randint(1, level)
 while True:
     try:
         guess = int(input("Guess: "))
         if guess > 0:
-            if guess < level:
+            if guess < number:
                 print("Too small!")
                 break
-            elif guess > level:
+            elif guess > number:
                 print("Too large!")
                 break
             else:
