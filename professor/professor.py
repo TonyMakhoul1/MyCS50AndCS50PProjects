@@ -17,7 +17,9 @@ def get_level():
 
 
 
-#def generate_integer(level):
+def generate_integer(level):
+    try:
+        input = input("")
 
 
 
