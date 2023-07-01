@@ -9,3 +9,5 @@
 #mylist = p.join(("apple", "banana", "carrot"), final_sep="")
 # "apple, banana and carrot"
 
+import inflect
+p = inflect.engine()
