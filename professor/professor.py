@@ -21,6 +21,7 @@ def generate_integer(level):
     while True:
         try:
             input = input("generate level: ")
+            input = random.randint(1,level)
             
 
 
