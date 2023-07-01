@@ -12,7 +12,7 @@ else:
     print("Invalid usage")
     sys.exit(1)
 
-input = input("Input: ")
+
 figlet.getFonts()
 
 if random == False:
@@ -21,7 +21,7 @@ if random == False:
     except:
         print("Invalid usage")
         sys.exit(1)
-
+input = input("Input: ")
 else:
     nfont = figlet.getFonts()
     randfont = choice(nfont)
