@@ -14,11 +14,10 @@ p = inflect.engine()
 list = []
 while True:
     try:
-        input = input("Input: ")
+        str = input("Input: ")
         for i in list:
-            list[input] = input
+            list[str] = str
     except EOFError:
-
         mylist = p.join(list)
-        print("Adieu, adieu, to", end= " ")
-        print(mylist)
+        print("Adieu, adieu, to", mylist)
+        exit()
