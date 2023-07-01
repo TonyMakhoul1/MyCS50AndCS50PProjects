@@ -14,10 +14,8 @@ while True:
         if guess > 0:
             if guess < number:
                 print("Too small!")
-                break
             elif guess > number:
                 print("Too large!")
-                break
             else:
                 print("Just right!")
                 break
