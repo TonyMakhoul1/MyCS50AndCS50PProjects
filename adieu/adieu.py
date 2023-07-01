@@ -13,5 +13,5 @@ import inflect
 p = inflect.engine()
 try:
     input = input("Input: ")
-except:
-    
+except EOFError:
+    print("Adieu, adieu, to")
