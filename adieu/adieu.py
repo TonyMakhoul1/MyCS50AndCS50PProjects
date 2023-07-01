@@ -11,9 +11,14 @@
 
 import inflect
 p = inflect.engine()
+list = []
 while True:
     try:
         input = input("Input: ")
-
+        for i in list:
+            list[input] = input
     except EOFError:
-        print("Adieu, adieu, to")
+
+        mylist = p.join(list)
+        print("Adieu, adieu, to", end= " ")
+        print(mylist)
