@@ -10,3 +10,9 @@ if len(sys.argv) == 2:
 else:
     print("Missing command-line argument")
     sys.exit(1)
+
+try:
+    
+except requests.RequestException:
+    print("Request Exception")
+    sys.exit(1)
