@@ -12,7 +12,9 @@ else:
     sys.exit(1)
 
 try:
-    
+    r = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+    result = r.json()
+    print(result[])
 except requests.RequestException:
     print("Request Exception")
     sys.exit(1)
