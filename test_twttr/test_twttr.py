@@ -1,9 +1,9 @@
 from twttr import shorten
 
 def test_one():
-    name = "tony"
-    assert shorten(name) == "tny"
+    name = "TONY"
+    assert shorten(name) == "TNY"
 
 def test_two():
-    name = "anto"
-    assert shorten(name) == "nt"
+    name = "ANTO"
+    assert shorten(name) == "NT"
