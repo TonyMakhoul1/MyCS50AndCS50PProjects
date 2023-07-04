@@ -1,17 +1,18 @@
 def main():
     name = input("Name: ")
     output = shorten(name)
-    #print(output)
+    print(output)
 
 def shorten(word):
+    wrd = ""
     vowel = ["A","E","I","O","U","a","e","i","o","u"]
     for i in word:
         if i in vowel:
-            print("", end="")
+            wrd[i] == ""
         else:
-            print(i, end ="")
-    print()
-    return word
+            wrd[i] == i
+
+    return wrd
 
 if __name__ == "__main__":
     main()
