@@ -1,14 +1,7 @@
-input = input("Input: ")
-vowel = ["A","E","I","O","U","a","e","i","o","u"]
-print("Output: ", end = "")
-for i in input:
-    if i in vowel:
-        print("", end="")
-    else:
-        print(i, end ="")
-print()
-
 def main():
+    name = input("Name: ")
+    output = shorten(name)
+    print(output)
 
 def shorten(word):
     vowel = ["A","E","I","O","U","a","e","i","o","u"]
@@ -17,3 +10,8 @@ def shorten(word):
             print("", end="")
         else:
             print(i, end ="")
+    print()
+    return word
+
+if __name__ == "__main__":
+    main()
