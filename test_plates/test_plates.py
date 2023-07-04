@@ -23,3 +23,6 @@ def test_seven():
 
 def test_eight():
     assert is_valid("01234") == False
+
+def test_nine():
+    assert is_valid("cs50") == True
