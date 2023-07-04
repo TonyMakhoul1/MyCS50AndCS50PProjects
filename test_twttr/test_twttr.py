@@ -9,4 +9,5 @@ def test_two():
     assert shorten(name) == "NT"
 
 def test_three():
-    asser shorten("me") == "m"
+    name = "me"
+    asser shorten(name) == "m"
