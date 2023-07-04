@@ -8,3 +8,6 @@ def test_two():
 
 def test_three():
     assert is_valid("123") == False
+
+def test_four():
+    assert is_valid("")
