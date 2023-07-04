@@ -6,13 +6,20 @@ def main():
 
 
 def convert(fraction):
-    try:
-        x,y = fraction.split("/")
-        x = int(x)
-        y = int(y)
-        f = x / y
-        if f <= 1:
-            
+    while True:
+        try:
+            x,y = fraction.split("/")
+            x = int(x)
+            y = int(y)
+            f = x / y
+            if f <= 1:
+                z = int(f * 100)
+                return z
+            else:
+                fraction = input("Fraction: ")
+                pass
+        except(ValueError, ZeroDivisionError):
+            raise
 
 
 def gauge(percentage):
