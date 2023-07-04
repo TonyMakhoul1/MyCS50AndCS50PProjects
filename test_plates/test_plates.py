@@ -15,3 +15,5 @@ def test_four():
 def test_five():
     assert is_valid("cs05") == False
 
+def test_six():
+    assert is_valid("to ny") == False
