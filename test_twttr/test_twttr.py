@@ -10,3 +10,10 @@ def test_two():
 
 def test_three():
     assert shorten("me") == "m"
+
+def test_four():
+    assert shorten("4") == "4"
+
+def test_five():
+    assert shorten("!") == "!"
+    
