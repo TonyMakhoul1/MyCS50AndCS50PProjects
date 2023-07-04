@@ -7,3 +7,6 @@ def test_one():
 def test_two():
     name = "ANTO"
     assert shorten(name) == "NT"
+
+def test_three():
+    asser shorten("me") == "m"
