@@ -6,3 +6,5 @@ def test_one():
 def test_two():
     assert is_valid("helloyarame") == False
 
+def test_three():
+    assert is_valid("123") == False
