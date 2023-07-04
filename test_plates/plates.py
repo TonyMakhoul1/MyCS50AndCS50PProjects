@@ -24,6 +24,7 @@ def is_valid(s):
         if s[i].isdigit():
             if not s[i:].isdigit():
                 return False
+
     for c in s:
         if c in [".", " ", "?", "!"]:
             return False
@@ -32,4 +33,5 @@ def is_valid(s):
 
 
 
-main()
+if __name__ == "__main__":
+    main()
