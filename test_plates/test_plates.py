@@ -13,5 +13,5 @@ def test_four():
     assert is_valid("to12ni") == False
 
 def test_five():
-    assert is_valid("cs50t") == False
+    assert is_valid("cs05") == False
 
