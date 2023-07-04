@@ -7,11 +7,8 @@ def shorten(word):
     wrd = ""
     vowel = ["A","E","I","O","U","a","e","i","o","u"]
     for i in word:
-        if i in vowel:
-            wrd[i] == ""
-        else:
-            wrd[i] == i
-
+        if i not in vowel:
+            wrd = wrd + i
     return wrd
 
 if __name__ == "__main__":
