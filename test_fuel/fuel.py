@@ -28,6 +28,7 @@ def convert(fraction):
         elif x < y or x == y:
             z = (x / y) * 100
             z = round(z)
+            return z
             '''if z <= 1:
                 print("E")
             elif z >= 99:
