@@ -21,26 +21,28 @@ def convert(fraction):
         y = int(y)
     else:
         if x == 0:
-            print("E")
+            return 0
         elif x < y or x == y:
             z = (x / y) * 100
             z = round(z)
-            if z <= 1:
+            '''if z <= 1:
                 print("E")
             elif z >= 99:
                 print("F")
             else:
                 print(z,end ="%")
-                print()
+                print()'''
         elif x > y:
-            fraction = input("Fraction: ")
-            x,y = fraction.split("/")
+            f = fraction
+            x,y = f.split("/")
             x = int(x)
             y = int(y)
 
 
 def gauge(percentage):
-    ...
+    if percentage == 0:
+        return "E"
+    elif percentage 
 
 
 if __name__ == "__main__":
