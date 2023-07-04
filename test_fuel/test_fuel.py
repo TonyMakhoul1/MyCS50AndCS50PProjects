@@ -13,7 +13,7 @@ def test_three():
         convert("Dog/Cat")
 
 def test_four():
-    assert convert("0/2") == 0 and gauge(0) == "E"
+    assert convert("1/100") == 1 and gauge(1) == "E"
 
 def test_five():
-    assert convert("2/2") == 100 and gauge(100) == "F"
+    assert convert("99/100") == 99 and gauge(99) == "F"
