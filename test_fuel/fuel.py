@@ -11,7 +11,8 @@ def convert(fraction):
         x = int(x)
         y = int(y)
         f = x / y
-        
+        if f <= 1:
+            
 
 
 def gauge(percentage):
