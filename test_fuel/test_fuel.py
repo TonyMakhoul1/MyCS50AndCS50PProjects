@@ -11,4 +11,9 @@ def test_two():
 def test_three():
     with pytest.raises(ValueError):
         convert("Dog/Cat")
-        
+
+def test_four():
+    assert convert("0/2") == 0 and gauge(0) == "E"
+
+def test_five():
+    assert convert("2/2") == 100 and gauge(100) == "F"
