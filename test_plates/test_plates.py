@@ -10,4 +10,4 @@ def test_three():
     assert is_valid("123") == False
 
 def test_four():
-    assert is_valid("")
+    assert is_valid("to12ni") == False
