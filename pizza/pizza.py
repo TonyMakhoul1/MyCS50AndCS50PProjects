@@ -1,3 +1,17 @@
+import sys
+
+def main():
+    check_command()
+    try:
+        
+
+    except FileNotFoundError:
+        print("File does not exist")
+        sys.exit(1)
+
+
+
+
 def check_command():
     if len(sys.argv) < 2 :
         print("Too few arguments")
