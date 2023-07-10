@@ -4,13 +4,13 @@ from tabulate import tabulate
 def main():
     check_command()
     try:
-        pizz = []
+        pizza = []
         with open(sys.argv[1]) as file:
             reader = csv.reader(file)
             for row in reader:
-                pizz.append(row)
+                pizza.append(row)
             #for piz in pizz:
-                print(pizz)
+                print(pizza)
                 #print(tabulate(pizz, headers = ["Sicilian Pizza", "Small", "Large"], tablefmt="grid"))
 
     except FileNotFoundError:
