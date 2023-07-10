@@ -10,7 +10,8 @@ def main():
             for row in reader:
                 pizz.append({"Sicilian Pizza":row["Sicilian Pizza"], "Small":row["Small"], "Large":row["Large"]})
             for piz in pizz:
-                print(piz["Sicilian Pizza"], piz["Small"], piz["Large"])
+                #print(piz["Sicilian Pizza"], piz["Small"], piz["Large"])
+                print(tabulate(piz, headers = ["Sicilian Pizza", "Small", "Large"], tablefmt="grid"))
 
     except FileNotFoundError:
         print("File does not exist")
