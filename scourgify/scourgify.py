@@ -16,7 +16,7 @@ def main():
 
 
         with open(sys.argv[2],"w") as cs:
-            writer = csv.writer(cs)
+            writer = csv.writer(cs, filednames=["first", "last", "house"])
             for s in list:
                 writer.writerow({"name":s["name"], "house":s["house"]})
 
