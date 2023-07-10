@@ -18,7 +18,8 @@ def main():
         with open(sys.argv[2],"w") as cs:
             writer = csv.writer(cs, filednames=["first", "last", "house"])
             for s in list:
-                writer.writerow({"name":s["name"], "house":s["house"]})
+                writer.writerow({"name": s["first"], "last":s["last"], "house":s["house"]})
+            
 
     except FileNotFoundError:
         print(f"Could not read {sys.argv[1]}")
