@@ -11,8 +11,10 @@ def main():
                 list.append(row)
             print(list)
 
-        """with open(sys.argv[2]) as cs:
-            writer = csv."""
+        with open(sys.argv[2]) as cs:
+            writer = csv.writer(cs)
+            writer.writerow({"name":name, "house":house})
+
     except FileNotFoundError:
         print(f"Could not read {sys.argv[1]}")
         sys.exit(1)
