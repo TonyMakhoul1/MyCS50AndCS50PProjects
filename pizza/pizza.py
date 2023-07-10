@@ -28,3 +28,6 @@ def check_command():
     if ".csv" not in sys.argv[1] :
         print("Not a CSV file")
         sys.exit(1)
+
+if __name__ == "__name__":
+    main()
