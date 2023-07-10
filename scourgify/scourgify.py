@@ -4,11 +4,13 @@ import csv
 def main():
     check_command
     try:
-        dict = []
+        list = []
         with open(sys.argv[1]) as file:
             reader = csv.reader(file)
             for row in reader:
-                print(row)
+                list.append(row)
+            print(list)
+        
     except FileNotFoundError:
         print(f"Could not read {sys.argv[1]}")
         sys.exit(1)
