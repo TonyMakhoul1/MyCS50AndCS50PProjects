@@ -9,9 +9,9 @@ def main():
             reader = csv.DictReader(file)
             for row in reader:
                 list.append(row)
-            for s in list:
-                print(s)
             
+
+
         '''
         with open(sys.argv[2]) as cs:
             writer = csv.writer(cs)
