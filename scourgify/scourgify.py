@@ -6,11 +6,13 @@ def main():
     try:
         list = []
         with open(sys.argv[1]) as file:
-            reader = csv.reader(file)
+            reader = csv.DictReader(file)
             for row in reader:
                 list.append(row)
             print(list)
-        
+
+        """with open(sys.argv[2]) as cs:
+            writer = csv."""
     except FileNotFoundError:
         print(f"Could not read {sys.argv[1]}")
         sys.exit(1)
