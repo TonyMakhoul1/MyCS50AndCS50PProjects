@@ -3,14 +3,15 @@ import csv
 
 def main():
     check_command
+    list = []
     try:
 
         with open(sys.argv[1]) as file:
             reader = csv.DictReader(file)
             for row in reader:
                 name = row["name"].split(",")
-                
-
+                list.append({"first": name[1].lstrip(), "last": name[0], "house": row["house"]})
+                print(list)
 
 
         '''
