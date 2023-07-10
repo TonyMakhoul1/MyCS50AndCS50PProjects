@@ -29,5 +29,5 @@ def check_command():
         print("Not a CSV file")
         sys.exit(1)
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     main()
