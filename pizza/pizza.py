@@ -9,7 +9,8 @@ def main():
             reader = csv.DictReader(file)
             for row in reader:
                 pizz.append({"Sicilian Pizza":row["Sicilian Pizza"], "Small":row["Small"], "Large":row["Large"]})
-            print(pizz)
+            for piz in pizz:
+                print(piz)
 
     except FileNotFoundError:
         print("File does not exist")
