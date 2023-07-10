@@ -3,9 +3,9 @@ import sys
 def main():
     check_command
     try:
-
+        print("yes")
     except FileNotFoundError:
-        print("File does not exist")
+        print(f"Could not read {sys.argv[1]}")
         sys.exit(1)
 
 def check_command():
@@ -18,3 +18,6 @@ def check_command():
     if ".csv" not in sys.argv[1] :
         print("Not a CSV file")
         sys.exit(1)
+
+if __name__ == "__main__":
+    main()
