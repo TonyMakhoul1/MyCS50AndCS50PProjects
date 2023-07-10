@@ -3,7 +3,8 @@ import sys
 def main():
     check_command
     try:
-        print("yes")
+        dict = {}
+        with
     except FileNotFoundError:
         print(f"Could not read {sys.argv[1]}")
         sys.exit(1)
