@@ -12,7 +12,7 @@ def main():
                 list.append({"first": name[1].lstrip(), "last": name[0], "house": row["house"]})
 
         with open(sys.argv[2],"w") as cs:
-            writer = csv.DictWriter(cs, filednames=["first", "last", "house"])
+            writer = csv.DictWriter(cs, fieldnames=["first", "last", "house"])
             writer.writerow({"first": "first", "last": "last", "house": "house"})
             for s in list:
                 writer.writerow({"first": s["first"], "last":s["last"], "house":s["house"]})
