@@ -13,6 +13,7 @@ def main():
 
         with open(sys.argv[2],"w") as cs:
             writer = csv.DictWriter(cs, filednames=["first", "last", "house"])
+            writer.writerow({"first": "first", "last": "last", "house": "house"})
             for s in list:
                 writer.writerow({"first": s["first"], "last":s["last"], "house":s["house"]})
 
