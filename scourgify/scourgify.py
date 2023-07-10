@@ -11,6 +11,7 @@ def main():
                 list.append(row)
             for s in list:
                 print(s)
+            
         '''
         with open(sys.argv[2]) as cs:
             writer = csv.writer(cs)
