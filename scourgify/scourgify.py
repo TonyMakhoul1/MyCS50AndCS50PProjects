@@ -14,12 +14,12 @@ def main():
             print(list)
 
 
-        '''
-        with open(sys.argv[2]) as cs:
+
+        with open(sys.argv[2],"w") as cs:
             writer = csv.writer(cs)
             for s in list:
                 writer.writerow({"name":s["name"], "house":s["house"]})
-        '''
+
     except FileNotFoundError:
         print(f"Could not read {sys.argv[1]}")
         sys.exit(1)
