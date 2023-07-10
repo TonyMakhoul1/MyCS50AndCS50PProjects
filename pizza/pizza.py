@@ -6,12 +6,12 @@ def main():
     try:
         pizz = []
         with open(sys.argv[1]) as file:
-            reader = csv.DictReader(file)
+            reader = csv.reader(file)
             for row in reader:
-                pizz.append({"Sicilian Pizza":row["Sicilian Pizza"], "Small":row["Small"], "Large":row["Large"]})
-            for piz in pizz:
-                #print(piz["Sicilian Pizza"], piz["Small"], piz["Large"])
-                print(tabulate(piz, headers = ["Sicilian Pizza", "Small", "Large"], tablefmt="grid"))
+                pizz.append(row)
+            #for piz in pizz:
+                print(pizz)
+                #print(tabulate(pizz, headers = ["Sicilian Pizza", "Small", "Large"], tablefmt="grid"))
 
     except FileNotFoundError:
         print("File does not exist")
