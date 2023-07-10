@@ -1,9 +1,15 @@
 import sys
+import csv
 
 def main():
     check_command()
     try:
-        
+        pizz = []
+        with open(sys.argv[1]) as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                pizz.append({"Sicilian Pizza":row["Sicilian Pizza"], "Small":row["Small"], "Large":row["Large"]})
+            print(pizz)
 
     except FileNotFoundError:
         print("File does not exist")
