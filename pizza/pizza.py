@@ -9,16 +9,11 @@ def main():
             reader = csv.reader(file)
             for row in reader:
                 pizza.append(row)
-            #for piz in pizz:
-                print(pizza)
-                #print(tabulate(pizz, headers = ["Sicilian Pizza", "Small", "Large"], tablefmt="grid"))
+            print(tabulate(pizza[1:], headers = pizza[0], tablefmt="grid"))
 
     except FileNotFoundError:
         print("File does not exist")
         sys.exit(1)
-
-
-
 
 def check_command():
     if len(sys.argv) < 2 :
