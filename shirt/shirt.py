@@ -4,7 +4,7 @@ import os
 def main():
     check_command()
     try:
-
+        print("yes")
     except FileNotFoundError:
         print("Input does not exist")
         sys.exit(1)
