@@ -1,6 +1,6 @@
 import sys
 import os
-
+from PIL import Image, ImageOps
 def main():
     check_command()
     try:
