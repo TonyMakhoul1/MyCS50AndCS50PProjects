@@ -19,7 +19,7 @@ def check_command():
     file1 = os.path.splitext(sys.argv[1])
     file2 = os.path.splitext(sys.argv[2])
     if file1[1] not in [".jpeg", ".jpg",".png"]:
-        print("Invalid output")
+        print("Invalid input")
         sys.exit(1)
     if file2[1] not in [".jpeg", ".jpg",".png"]:
         print("Invalid output")
