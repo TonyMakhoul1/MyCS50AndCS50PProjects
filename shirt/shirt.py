@@ -4,8 +4,8 @@ from PIL import Image, ImageOps
 def main():
     check_command()
     try:
-        imgfile = open(sys.argv[1])
-        shirtfile = open("shirt.png")
+        imgfile = Image.open(sys.argv[1])
+        shirtfile = Image.open("shirt.png")
         size = shirtfile.size
         # to do the size of the imgfile into the same size of the shirtfile
         new = ImageOps.fit(imgfile, size)
