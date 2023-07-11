@@ -6,7 +6,7 @@ def main():
     try:
         imgfile = open(sys.argvp[1])
         shirtfile = open("shirt.png")
-        
+        size = shirtfile.size
     except FileNotFoundError:
         print("Input does not exist")
         sys.exit(1)
