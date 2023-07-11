@@ -4,7 +4,8 @@ from PIL import Image, ImageOps
 def main():
     check_command()
     try:
-        print("yes")
+        imgfile = open(sys.argvp[1])
+        shirtfile = open("shirt.png")
     except FileNotFoundError:
         print("Input does not exist")
         sys.exit(1)
