@@ -2,6 +2,7 @@ import sys
 
 def main():
     check_command()
+    print("hello")
 
 def check_command():
     if len(sys.argv) < 3 :
