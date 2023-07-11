@@ -3,7 +3,6 @@ import os
 
 def main():
     check_command()
-    print("hello")
     try:
 
     except FileNotFoundError:
@@ -26,7 +25,7 @@ def check_command():
         print("Invalid output")
         sys.exit(1)
 
-    if file1[1] != file2[1]:
+    if file1[1].lower() != file2[1].lower():
         print("Input and output have different extensions")
         sys.exit(1)
 
