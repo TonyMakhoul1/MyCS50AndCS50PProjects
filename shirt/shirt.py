@@ -12,7 +12,7 @@ def main():
         # to paste the shirt file in our new photo
         new.paste(shirtfile,shirtfile)
 
-        new.save(argv[2])
+        new.save(sys.argv[2])
     except FileNotFoundError:
         print("Input does not exist")
         sys.exit(1)
