@@ -26,10 +26,10 @@ def not_am_pm(hour, minute, apm):
             new_hour == int(hour)
     if minute == None:
         new_minute = ":00"
-        time = new_hour + new_minute
+        time = f"{new_hour:02}" + new_minute
     else:
-        time = new_hour + " : " + minute
-
+        time = f"{new_hour:02}" + " : " + minute
+    return time
 
 if __name__ == "__main__":
     main()
