@@ -8,3 +8,6 @@ def test_two():
 
 def test_three():
     assert count("tu um im um") == 2
+
+def test_four():
+    assert count("") == 0
