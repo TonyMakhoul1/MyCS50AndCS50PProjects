@@ -7,8 +7,9 @@ def main():
 
 
 def validate(ip):
-    if re.search(r"^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\.$", ip):
-        print(ip)
+    if re.search("^([0-9]+\.){4}$", ip):
+        list = ip.split(".")
+        print(list)
 
 
 if __name__ == "__main__":
