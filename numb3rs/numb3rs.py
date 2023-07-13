@@ -10,7 +10,7 @@ def validate(ip):
     if re.search("^([0-9]+\.){3}[0-9]+$", ip):
         list = ip.split(".")
         for s in list:
-            if s > 255 or s < 0:
+            if int(s) > 255 or int(s) < 0:
                 return False
         return True
     else:
