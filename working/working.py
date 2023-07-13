@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    clock = re.search(r"^([0-9]+)(:([0-9]+))? (AM|PM) to ([0-9]+)(:([0-9]+))? (AM|PM)$",s )
+    clock = re.search(r"^([0-9]+)(:([0-5][0-9]))? (AM|PM) to ([0-9]+)(:([0-5][0-9]))? (AM|PM)$",s )
     if clock:
         groupes = clock.groups()
         if int(groupes[0]) > 12 or int(groupes[4]) > 12:
