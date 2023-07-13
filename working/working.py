@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    clock = re.search(r"^([0-9]+(:[0-9]+)?) AM to ([0-9]+(:[0-9]+)?) PM$",s )
+    clock = re.search(r"^([0-9]+)(:([0-9]+))? AM to ([0-9]+)(:([0-9]+))? PM$",s )
     if clock:
         groupes = clock.groups()
         print(groupes)
