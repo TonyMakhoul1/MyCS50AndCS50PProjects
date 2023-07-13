@@ -15,6 +15,7 @@ def convert(s):
             raise ValueError
         time_one = not_am_pm(groupes[0], groupes[2], groupes[3])
         time_two = not_am_pm(groupes[4], groupes[6], groupes[7])
+        return time_one + " to " + time_two
     else:
         raise ValueError
 
