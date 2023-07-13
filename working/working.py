@@ -7,10 +7,10 @@ def main():
 
 
 def convert(s):
-    ...
+    if re.search()
 
 
-...
+
 
 
 if __name__ == "__main__":
