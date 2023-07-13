@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    if re.search(r"^(0-9)+(:(0-9)+)? AM to (0-9)+(:(0-9)+)? PM$",s ):
+    if re.search(r"^((0-9)+:(0-9)+)$",s ):
         print("yes")
 
 
