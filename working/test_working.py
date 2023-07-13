@@ -9,3 +9,11 @@ def test_two():
 def test_three():
     with pytest.raises(ValueError):
         convert("9:66 AM to 5:00 PM")
+
+def test_four():
+    with pytest.raises(ValueError):
+        convert("9:66 AM - 5:00 PM")
+
+def test_five():
+    with pytest.raises(ValueError):
+        convert("5:00 PM to 5:00 PM")
