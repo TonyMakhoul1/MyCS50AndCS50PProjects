@@ -1,8 +1,7 @@
 from numb3rs import validate
 
 def testone():
-    assert ip == validate(124.5.6.4)
+    assert validate(124.5.6.4) == True
 
 def testtwo():
-    assert ip == validate(255.255.255.255)
-    
+    assert validate(255.300.255.255) == False
