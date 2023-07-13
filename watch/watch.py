@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    link = re.search(r"^(\W|\w)+https?://(www\.)?youtube\.com/(\w+)/(\w|\W)+/(\w|\W)+$", s, re.IGNORECASE)
+    link = re.search(r"^(\W|\w)+https?://(www\.)?youtube\.com/(\w+)/(\w|\W)+$", s, re.IGNORECASE)
     if link:
         group_link = link.groups()
         return group_link
