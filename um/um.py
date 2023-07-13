@@ -7,7 +7,8 @@ def main():
 
 
 def count(s):
-    re.search
+    um = re.findall(r"\W+um\W", s)
+    print(um)
 
 
 if __name__ == "__main__":
