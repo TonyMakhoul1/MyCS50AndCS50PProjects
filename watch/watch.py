@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    if re.search(r"^\w+$", ip):
+    if re.search(r"^\w+https?://(www\.)?$", ip):
 
 
 if __name__ == "__main__":
