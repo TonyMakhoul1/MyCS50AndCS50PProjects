@@ -7,7 +7,7 @@ def test_two():
     assert count("tummy") == 0
 
 def test_three():
-    assert count("tu um im um") == 2
+    assert count("tu uM im um") == 2
 
 def test_four():
     assert count("") == 0
