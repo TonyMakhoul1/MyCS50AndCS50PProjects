@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    if re.search(r"^\w+https?://(www\.)?(youtube\.com|youtu.be)$", ip):
+    if re.search(r"^\w+https?://(www\.)?youtube\.com$", ip):
 
 
 if __name__ == "__main__":
