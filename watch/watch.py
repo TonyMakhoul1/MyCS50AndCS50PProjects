@@ -7,10 +7,7 @@ def main():
 
 
 def parse(s):
-    ...
-
-
-...
+    if re.search(r"^$", ip):
 
 
 if __name__ == "__main__":
