@@ -3,8 +3,11 @@ import sys
 
 
 def main():
-    print(convert(input("Hours: ")))
-
+    try:
+        print(convert(input("Hours: ")))
+    except ValueError:
+        print("ValueError")
+        sys.exit(1)
 
 def convert(s):
     clock = re.search(r"^([0-9]+)(:([0-5][0-9]))? (AM|PM) to ([0-9]+)(:([0-5][0-9]))? (AM|PM)$",s )
