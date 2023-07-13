@@ -13,7 +13,9 @@ def convert(s):
         print(groupes)
 
 
-
+def not_am_pm(hour, minute, apm):
+    if apm == "PM":
+        if 
 
 
 if __name__ == "__main__":
