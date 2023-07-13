@@ -1,2 +1,5 @@
 import validators
-validators.email('someone@example.com')
+input = validators.email('someone@example.com')
+if input:
+    print("valid")
+print("invalid")
