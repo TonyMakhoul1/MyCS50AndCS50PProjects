@@ -7,11 +7,16 @@ def main():
 
 
 def convert(s):
-    clock = re.search(r"^([0-9]+)(:([0-9]+))? AM to ([0-9]+)(:([0-9]+))? PM$",s )
+    clock = re.search(r"^([0-9]+)(:([0-9]+))? (AM) to ([0-9]+)(:([0-9]+))? (PM)$",s )
     if clock:
         groupes = clock.groups()
         print(groupes)
-
+        if int(groupes[0]) > 12 or int(groupes[4]) > 12:
+            raise ValueError
+        time_one = not_am_pm(groupes[0], groupes[2], groupes[3])
+        time_two = not_am_pm(groupes[4], groupes[6], groupes[7])
+    else:
+        raise ValueError
 
 def not_am_pm(hour, minute, apm):
     if apm == "PM":
