@@ -5,4 +5,7 @@ def test_one():
 
 def test_two():
     assert convert("9:00 AM to 5:00 PM") == "09:00 to 17:00"
+
+def test_three():
+    assert convert("9:60 AM to 5:00 PM"):
     
