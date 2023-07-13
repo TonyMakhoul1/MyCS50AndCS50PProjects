@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    if re.search(r"^\w+https?://(www\.)?youtube\.com/(.+)/\w+$", s, re.IGNORECASE):
+    if re.search(r"^<\w+https?://(www\.)?youtube\.com/(.+)/\w+$", s, re.IGNORECASE):
         print("yes")
 
 
