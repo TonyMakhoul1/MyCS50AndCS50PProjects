@@ -6,10 +6,10 @@ class Jar:
         self.size = 0
 
     def __str__(self):
-        return "🍪" * size
+        return "🍪" * self.size
 
     def deposit(self, n):
-
+        
 
     def withdraw(self, n):
         ...
