@@ -2,8 +2,6 @@ class Jar:
     def __init__(self, capacity=12):
         if capacity < 0:
             raise ValueError("Can't be a negative number")
-        self.capacity = capacity
-        self.size = 0
 
     def __str__(self):
         return "🍪" * self.size
@@ -16,8 +14,11 @@ class Jar:
         self.size = self.size + n
 
     def withdraw(self, n):
-        ...
-
+        if n < 0:
+            raise ValueError("Negative Number")
+        if self.size - n < 0:
+            raise ValueError("We Don't Have Enough Cookies")
+        self.size = self.size - n
     @property
     def capacity(self):
         return self._capacity
@@ -25,3 +26,6 @@ class Jar:
     @property
     def size(self):
         return self._size
+
+jar = Jar()
+print(jar)
