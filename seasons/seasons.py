@@ -8,8 +8,7 @@ def main():
 
 
 def check_birth(birth):
-    birth = re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
-    if birth:
+    if re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", birth):
         grps = birth.groups()
         print(grps)
     sys.exit(1)
