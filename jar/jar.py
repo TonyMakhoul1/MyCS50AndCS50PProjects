@@ -8,15 +8,15 @@ class Jar:
         return "🍪" * n
 
     def deposit(self, n):
-        
+
 
     def withdraw(self, n):
         ...
 
     @property
     def capacity(self):
-        ...
+        return self._capacity
 
     @property
     def size(self):
-        ...
+        return self._n
