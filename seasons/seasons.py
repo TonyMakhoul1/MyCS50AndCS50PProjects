@@ -10,6 +10,7 @@ def main():
 
     except:
         sys.exit("Invalid Date")
+    true_date = 
 
 def check_birth(birth):
     if re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", birth):
