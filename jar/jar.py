@@ -3,12 +3,13 @@ class Jar:
         if capacity < 0:
             raise ValueError("Can't be a negative number")
         self.capacity = capacity
+        self.size = 0
 
     def __str__(self):
-        return "🍪" * n
+        return "🍪" * size
 
     def deposit(self, n):
-        
+
 
     def withdraw(self, n):
         ...
@@ -19,4 +20,4 @@ class Jar:
 
     @property
     def size(self):
-        return self._n
+        return self._size
