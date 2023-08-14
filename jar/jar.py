@@ -8,7 +8,7 @@ class Jar:
         return "🍪" * n
 
     def deposit(self, n):
-        ...
+        
 
     def withdraw(self, n):
         ...
