@@ -13,9 +13,7 @@ def main():
     true_date = date(int(year), int(month), int(day))
     today_date = date.today()
     minus = today_date - true_date
-    print(minus.days)
     minutes = minus.days * 24 * 60
-    print(minutes)
     p = inflect.engine()
     words = p.number_to_words(minutes, andword="")
     print(words)
