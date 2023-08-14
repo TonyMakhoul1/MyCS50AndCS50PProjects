@@ -6,11 +6,13 @@ def main():
     birth_date = input("Date of Birth: ")
     try:
         year, month, day = check_birth(birth_date)
-        print(year, month, day)
 
     except:
         sys.exit("Invalid Date")
-    true_date = 
+    true_date = date(int(year), int(month), int(day))
+    today_date = date.today()
+    print(true_date)
+    print(today_date)
 
 def check_birth(birth):
     if re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", birth):
