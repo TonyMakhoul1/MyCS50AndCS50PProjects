@@ -10,7 +10,9 @@ class Jar:
 
     def deposit(self, n):
         if self.size + n > self.capacity:
-            raise ValueError("Too much")
+            raise ValueError("Too Much")
+        if n > self.capacity:
+            raise ValueError("Too Much")
         self.size = self.size + n
 
     def withdraw(self, n):
