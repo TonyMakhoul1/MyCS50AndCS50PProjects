@@ -3,9 +3,9 @@ class Jar:
         if capacity < 0:
             raise ValueError("Can't be a negative number")
         self.capacity = capacity
-        
+
     def __str__(self):
-        ...
+        return "🍪" * n
 
     def deposit(self, n):
         ...
