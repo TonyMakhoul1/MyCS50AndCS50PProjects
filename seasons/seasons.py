@@ -1,6 +1,7 @@
 from datetime import date
 import re
 import sys
+import inflect
 
 def main():
     birth_date = input("Date of Birth: ")
@@ -15,6 +16,9 @@ def main():
     print(minus.days)
     minutes = minus.days * 24 * 60
     print(minutes)
+    p = inflect.engine()
+    words = p.number_to_words(minutes, andword="")
+    print(words)
 
 def check_birth(birth):
     if re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", birth):
