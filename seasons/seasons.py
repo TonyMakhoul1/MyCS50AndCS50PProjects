@@ -11,8 +11,10 @@ def main():
         sys.exit("Invalid Date")
     true_date = date(int(year), int(month), int(day))
     today_date = date.today()
-    print(true_date)
-    print(today_date)
+    minus = today_date - true_date
+    print(minus.days)
+    minutes = minus.days * 24 * 60
+    print(minutes)
 
 def check_birth(birth):
     if re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", birth):
