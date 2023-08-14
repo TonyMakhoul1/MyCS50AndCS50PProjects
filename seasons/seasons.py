@@ -16,7 +16,7 @@ def main():
     minutes = minus.days * 24 * 60
     p = inflect.engine()
     words = p.number_to_words(minutes, andword="")
-    print(words)
+    print(words.capitalize() + " minutes")
 
 def check_birth(birth):
     if re.search(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$", birth):
