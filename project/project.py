@@ -43,7 +43,8 @@ def check_calories(cal):
 
 
 
-def check_price():
+def check_price(pri):
+     if pri 
 
 
 
