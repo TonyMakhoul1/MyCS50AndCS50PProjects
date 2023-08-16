@@ -30,16 +30,20 @@ def main():
                     4)       exit
                   """)
 
-            choice = [1, 2, 3, 4]
+            try:
+                 Option = int(input("Enter option: "))
+            except Exception as e:
+                 print("Error:", e)
+                 print("Enter 1, 2, 3 or 4 only")
+                 continue
+            if Option == 2:
 
-            if choice == "2":
                 name = input("What do you want to add? ").capitalize()
                 for row in list:
                     if row["Name"] == name:
                         addinglist.append(row)
                 print(addinglist)
-            else:
-                sys.exit(1)
+            
 
 
 
