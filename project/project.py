@@ -54,9 +54,9 @@ def main():
 
 
             if Option == 3:
-                 name = input("What do you want to remove? ").capitalize()
+                 rem = input("What do you want to remove? ").capitalize()
                  for row in addinglist:
-                      if row["Name"] == name:
+                      if row["Name"] == rem:
                            removinglist.remove(row)
                       print(removinglist)
 
