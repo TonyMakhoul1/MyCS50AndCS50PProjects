@@ -1,12 +1,18 @@
 import sys
 import csv
 def main():
-        check_cmd()
-
-
         addinglist = []
         list = []
         callist = []
+        check_cmd()
+        with open(sys.argv[1]) as file:
+                    reader = csv.DictReader(file)
+                    for row in reader:
+                        list.append(row)
+
+
+
+
         while True:
             print("""
                     1)       Menu
