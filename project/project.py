@@ -18,6 +18,10 @@ def main():
              calories = check_calories(row["Calories"])
              callist.append(calories)
         print(callist)
+        choice = input("Wanna add a name?")
+        if choice == "yes":
+             name = input("")
+
 
 def check_cmd():
     if len(sys.argv) < 3:
