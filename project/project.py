@@ -32,8 +32,9 @@ def main():
                         reader = csv.DictReader(file)
                         for row in reader:
                             list.append(row)
-                        #for row in list:
-                            #  print(row["Name"])
+                        for row 
+
+                        print(list)
 
                 except FileNotFoundError:
                     print(f"Could not read {sys.argv[1]}")
