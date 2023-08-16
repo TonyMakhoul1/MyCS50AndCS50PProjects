@@ -13,8 +13,11 @@ def main():
         except FileNotFoundError:
              print(f"Could not read {sys.argv[1]}")
              sys.exit(1)
+        callist = []
         for row in list:
-             check_calories(row["Calories"])
+             calories = check_calories(row["Calories"])
+             callist.append(calories)
+        print(callist)
 
 def check_cmd():
     if len(sys.argv) < 3:
