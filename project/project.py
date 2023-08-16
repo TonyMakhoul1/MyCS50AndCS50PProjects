@@ -1,7 +1,6 @@
 import sys
 import csv
 def main():
-
         check_cmd()
         list = []
         try:
@@ -24,6 +23,9 @@ def main():
         """
         addinglist = []
         while True:
+            print(" List:\
+                    1- ")
+
             choice = input("Wanna add a plat? ")
             if choice == "yes":
                 name = input("What do you want to add? ").capitalize()
@@ -33,6 +35,7 @@ def main():
                 print(addinglist)
             else:
                 sys.exit(1)
+
 
 
 
