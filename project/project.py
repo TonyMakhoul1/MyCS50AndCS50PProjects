@@ -9,18 +9,31 @@ def main():
                   reader = csv.DictReader(file)
                   for row in reader:
                        list.append(row)
+                  for row in list:
+                       print(row["Name"])
 
         except FileNotFoundError:
              print(f"Could not read {sys.argv[1]}")
              sys.exit(1)
+        """
         callist = []
         for row in list:
              calories = check_calories(row["Calories"])
              callist.append(calories)
         print(callist)
-        choice = input("Wanna add a name?")
+        """
+        addinglist = []
+        choice = input("Wanna add a plat? ")
         if choice == "yes":
-             name = input("")
+             name = input("What do you want to add? ")
+             for row in list:
+                  if row["Name"] == name:
+                       addinglist.append(row)
+             print(addinglist)
+        else:
+             sys.exit(1)
+
+
 
 
 def check_cmd():
