@@ -22,10 +22,10 @@ def main():
         print(callist)
         """
         addinglist = []
-        while True:
+        '''while True:
             print(" List:\
                     1- ")
-
+        '''
             choice = input("Wanna add a plat? ")
             if choice == "yes":
                 name = input("What do you want to add? ").capitalize()
