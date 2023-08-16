@@ -8,8 +8,8 @@ def main():
                   reader = csv.DictReader(file)
                   for row in reader:
                        list.append(row)
-                  for row in list:
-                       print(row["Name"])
+                  #for row in list:
+                     #  print(row["Name"])
 
         except FileNotFoundError:
              print(f"Could not read {sys.argv[1]}")
@@ -23,10 +23,15 @@ def main():
         """
         addinglist = []
         while True:
+            print("           List \
+                    1- Menu \
+                    2- Add your meal \
+                    3- Withdraw a meal \
+                    4- exit")
 
-    
-            choice = input("Wanna add a plat? ")
-            if choice == "yes":
+            choice = [1, 2, 3, 4]
+
+            if choice == "2":
                 name = input("What do you want to add? ").capitalize()
                 for row in list:
                     if row["Name"] == name:
