@@ -11,6 +11,7 @@ def main():
         print(callist)
         """
         addinglist = []
+        removinglist = []
         while True:
             print("""
                     1)       Menu
@@ -56,7 +57,8 @@ def main():
                  name = input("What do you want to remove? ").capitalize()
                  for row in addinglist:
                       if row["Name"] == name:
-                           removinglist.
+                           removinglist.remove(row)
+                      print(removinglist)
 
 
 
