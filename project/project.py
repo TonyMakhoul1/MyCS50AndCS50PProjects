@@ -26,8 +26,8 @@ def check_cmd():
         sys.exit(1)
 
 
-def check_calories():
-     if
+def check_calories(cal):
+     if int(cal) < 
 
 
 
