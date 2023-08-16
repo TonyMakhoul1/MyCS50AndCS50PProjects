@@ -11,7 +11,7 @@ def main():
         print(callist)
         """
         addinglist = []
-        
+
         list = []
         while True:
             print("""
@@ -23,6 +23,7 @@ def main():
 
             try:
                  Option = int(input("Enter option: "))
+                 print()
             except Exception as e:
                  print("Error:", e)
                  print("Enter 1, 2, 3 or 4 only")
