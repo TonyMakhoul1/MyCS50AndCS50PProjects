@@ -44,7 +44,12 @@ def check_calories(cal):
 
 
 def check_price(pri):
-     if pri 
+     if int(pri) < 15:
+          return "Low cost"
+     elif int(pri) < 25:
+          return "Well cost"
+     else:
+          return "High cost"
 
 
 
