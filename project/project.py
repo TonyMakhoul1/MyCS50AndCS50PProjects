@@ -11,7 +11,7 @@ def main():
         print(callist)
         """
         addinglist = []
-        removinglist = []
+        
         list = []
         while True:
             print("""
@@ -52,6 +52,8 @@ def main():
                     if row["Name"] == name:
                         addinglist.append(row)
                 print("The new list")
+                print()
+                print()
                 print(addinglist)
 
 
@@ -61,6 +63,8 @@ def main():
                       if row["Name"] == rem:
                            addinglist.remove(row)
                       print("The new list")
+                      print()
+                      print()
                       print(addinglist)
 
 
