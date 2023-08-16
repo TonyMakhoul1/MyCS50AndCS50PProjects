@@ -25,6 +25,7 @@ def main():
                  print("Error:", e)
                  print("Enter 1, 2, 3 or 4 only")
                  continue
+
             if Option == 1:
                 list = []
                 try:
@@ -35,11 +36,13 @@ def main():
                         for row in list:
                              print(row)
 
-                        
+
 
                 except FileNotFoundError:
                     print(f"Could not read {sys.argv[1]}")
                     sys.exit(1)
+
+
             if Option == 2:
 
                 name = input("What do you want to add? ").capitalize()
@@ -48,6 +51,12 @@ def main():
                         addinglist.append(row)
                 print(addinglist)
 
+
+            if Option == 3:
+                 name = input("What do you want to remove? ").capitalize()
+                 for row in addinglist:
+                      if row["Name"] == name:
+                           removinglist.
 
 
 
