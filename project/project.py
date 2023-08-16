@@ -2,18 +2,7 @@ import sys
 import csv
 def main():
         check_cmd()
-        list = []
-        try:
-             with open(sys.argv[1]) as file:
-                  reader = csv.DictReader(file)
-                  for row in reader:
-                       list.append(row)
-                  #for row in list:
-                     #  print(row["Name"])
 
-        except FileNotFoundError:
-             print(f"Could not read {sys.argv[1]}")
-             sys.exit(1)
         """
         callist = []
         for row in list:
@@ -36,6 +25,19 @@ def main():
                  print("Error:", e)
                  print("Enter 1, 2, 3 or 4 only")
                  continue
+            if Option == 1:
+                list = []
+                try:
+                    with open(sys.argv[1]) as file:
+                        reader = csv.DictReader(file)
+                        for row in reader:
+                            list.append(row)
+                        #for row in list:
+                            #  print(row["Name"])
+
+                except FileNotFoundError:
+                    print(f"Could not read {sys.argv[1]}")
+                    sys.exit(1)
             if Option == 2:
 
                 name = input("What do you want to add? ").capitalize()
@@ -43,7 +45,7 @@ def main():
                     if row["Name"] == name:
                         addinglist.append(row)
                 print(addinglist)
-            
+
 
 
 
