@@ -51,6 +51,7 @@ def main():
                 for row in list:
                     if row["Name"] == name:
                         addinglist.append(row)
+                print("The new list")
                 print(addinglist)
 
 
@@ -58,8 +59,9 @@ def main():
                  rem = input("What do you want to remove? ").capitalize()
                  for row in addinglist:
                       if row["Name"] == rem:
-                           removinglist.remove(row)
-                      print(removinglist)
+                           addinglist.remove(row)
+                      print("The new list")
+                      print(addinglist)
 
 
 
