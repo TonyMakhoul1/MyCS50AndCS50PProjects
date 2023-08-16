@@ -23,11 +23,12 @@ def main():
         """
         addinglist = []
         while True:
-            print("           List \
-                    1- Menu \
-                    2- Add your meal \
-                    3- Withdraw a meal \
-                    4- exit")
+            print("""
+                    1)       Menu
+                    2)       Add your meal
+                    3)       Withdraw a meal
+                    4)       exit
+                  """)
 
             choice = [1, 2, 3, 4]
 
