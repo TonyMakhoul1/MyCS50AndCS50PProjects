@@ -23,15 +23,16 @@ def main():
         print(callist)
         """
         addinglist = []
-        choice = input("Wanna add a plat? ")
-        if choice == "yes":
-             name = input("What do you want to add? ")
-             for row in list:
-                  if row["Name"] == name:
-                       addinglist.append(row)
-             print(addinglist)
-        else:
-             sys.exit(1)
+        while True:
+            choice = input("Wanna add a plat? ")
+            if choice == "yes":
+                name = input("What do you want to add? ").capitalize()
+                for row in list:
+                    if row["Name"] == name:
+                        addinglist.append(row)
+                print(addinglist)
+            else:
+                sys.exit(1)
 
 
 
