@@ -3,16 +3,10 @@ import csv
 def main():
         check_cmd()
 
-        """
-        callist = []
-        for row in list:
-             calories = check_calories(row["Calories"])
-             callist.append(calories)
-        print(callist)
-        """
-        addinglist = []
 
+        addinglist = []
         list = []
+        callist = []
         while True:
             print("""
                     1)       Menu
@@ -69,6 +63,12 @@ def main():
                       print(addinglist)
 
 
+            if Option == 4:
+
+                for row in list:
+                    calories = check_calories(row["Calories"])
+                    callist.append(calories)
+                print(callist)
 
 
 
