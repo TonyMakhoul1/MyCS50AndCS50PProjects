@@ -3,13 +3,14 @@ import csv
 def main():
 
         check_cmd()
+        list = []
         try:
-             with open(argv[1]) as file:
-                  reader = csv.Dictreader(file)
+             with open(sys.argv[1]) as file:
+                  reader = csv.DictReader(file)
                   for row in reader:
-                       print(row)
+
         except FileNotFoundError:
-             print(f"Could not read {argv[1]}")
+             print(f"Could not read {sys.argv[1]}")
              sys.exit(1)
 
 
@@ -25,7 +26,8 @@ def check_cmd():
         sys.exit(1)
 
 
-#def function_2():
+def check_calories():
+     if
 
 
 
