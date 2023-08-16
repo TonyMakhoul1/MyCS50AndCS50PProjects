@@ -8,11 +8,12 @@ def main():
              with open(sys.argv[1]) as file:
                   reader = csv.DictReader(file)
                   for row in reader:
+                       list.append(row)
 
         except FileNotFoundError:
              print(f"Could not read {sys.argv[1]}")
              sys.exit(1)
-
+        
 
 def check_cmd():
     if len(sys.argv) < 3:
