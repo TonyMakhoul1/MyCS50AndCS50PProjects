@@ -43,7 +43,8 @@ def check_calories(cal):
 
 
 
-#def function_n():
+def check_price():
+
 
 
 if __name__ == "__main__":
