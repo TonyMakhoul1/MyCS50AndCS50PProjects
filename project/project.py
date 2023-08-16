@@ -12,6 +12,7 @@ def main():
         """
         addinglist = []
         removinglist = []
+        list = []
         while True:
             print("""
                     1)       Menu
@@ -28,7 +29,7 @@ def main():
                  continue
 
             if Option == 1:
-                list = []
+
                 try:
                     with open(sys.argv[1]) as file:
                         reader = csv.DictReader(file)
