@@ -32,13 +32,13 @@ def main():
                  continue
 
             if Option == 1:
-
+                menulist = []
                 try:
                     with open(sys.argv[1]) as file:
                         reader = csv.DictReader(file)
                         for row in reader:
-                            list.append(row)
-                        for row in list:
+                            menulist.append(row)
+                        for row in menulist:
                              print(row)
 
 
@@ -56,7 +56,7 @@ def main():
                         addinglist.append(row)
                 print()
                 print()
-                print("The new list")
+                print("Your Order Now")
                 print()
                 print()
                 print(addinglist)
@@ -69,7 +69,7 @@ def main():
                            addinglist.remove(row)
                       print()
                       print()
-                      print("The new list")
+                      print("Your Order Now")
                       print()
                       print()
                       print(addinglist)
