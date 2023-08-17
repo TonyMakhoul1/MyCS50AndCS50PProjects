@@ -54,6 +54,8 @@ def main():
                 for row in list:
                     if row["Name"] == name:
                         addinglist.append(row)
+                print()
+                print()
                 print("The new list")
                 print()
                 print()
@@ -65,6 +67,8 @@ def main():
                  for row in addinglist:
                       if row["Name"] == rem:
                            addinglist.remove(row)
+                      print()
+                      print()
                       print("The new list")
                       print()
                       print()
