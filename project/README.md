@@ -3,4 +3,4 @@
 #### Description:
 Tony's Menu, a project of a fast food restaurent that delivers many kind of food to people
 around, pleasing their hunger with its high food quality. And like other restaurents, an online program
-of application is set for a better connections between persons
+of application is set for a better connections between persons and the 
