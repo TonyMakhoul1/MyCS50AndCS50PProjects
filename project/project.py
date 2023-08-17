@@ -82,9 +82,10 @@ def main():
                 if callist == []:
                     sys.exit("You Didn't Order Anything")
 
-                print(tabulate(callist[1:], headers = callist[0], tablefmt="grid"))
+                print(tabulate(callist, headers = "keys", tablefmt="grid"))
                 #print(callist)
                 #print(prilist)
+                sys.exit(1)
 
 
 
