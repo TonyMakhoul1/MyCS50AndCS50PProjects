@@ -19,8 +19,8 @@ def main():
             print("""
                     1)       Menu
                     2)       Adding a meal
-                    3)       canceling a meal
-                    4)       exit
+                    3)       Canceling a meal
+                    4)       Exit
                   """)
 
             try:
