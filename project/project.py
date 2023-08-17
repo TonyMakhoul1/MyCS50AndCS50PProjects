@@ -74,12 +74,13 @@ def main():
 
                 for row in addinglist:
                     calories = check_calories(row["Calories"])
-                    callist.append(calories)
                     price = check_price(row["Price"])
-                    prilist.append(price)
+                    callist.append({"Name":name, "Description": calories, "Cost":price})
+
+                    #prilist.append(price)
 
                 print(callist)
-                print(prilist)
+                #print(prilist)
 
 
 
