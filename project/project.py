@@ -4,6 +4,7 @@ def main():
         addinglist = []
         list = []
         callist = []
+        prilist = []
         check_cmd()
         with open(sys.argv[1]) as file:
                     reader = csv.DictReader(file)
@@ -74,7 +75,11 @@ def main():
                 for row in list:
                     calories = check_calories(row["Calories"])
                     callist.append(calories)
+                    price = check_price(row["Price"])
+                    prilist.append(price)
+
                 print(callist)
+                print(prilist)
 
 
 
