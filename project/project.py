@@ -32,6 +32,8 @@ def main():
                  continue
 
             if Option == 1:
+                print("This Is Our Menu.")
+                print()
                 menulist = []
                 try:
                     with open(sys.argv[1]) as file:
