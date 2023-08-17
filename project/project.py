@@ -19,7 +19,7 @@ def main():
             print("""
                     1)       Menu
                     2)       Add your meal
-                    3)       Withdraw a meal
+                    3)       cancel a meal
                     4)       exit
                   """)
 
