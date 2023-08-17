@@ -7,9 +7,9 @@ def test_check_cmd():
 
 def test_check_calories():
     assert check_calories(100) == "To all weight"
-    assert check_calories(250) == "To 120 Kg"
-    assert check_calories(350) == "To 100 Kg"
-    assert check_calories(500) == "To 80 Kg"
+    assert check_calories(250) == "To under 120 Kg"
+    assert check_calories(350) == "To under 100 Kg"
+    assert check_calories(500) == "To under 80 Kg"
 
 
 

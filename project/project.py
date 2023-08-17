@@ -105,11 +105,11 @@ def check_calories(cal):
      if int(cal) < 150:
           return "To all weight"
      elif int(cal) < 300:
-          return "To 120 Kg"
+          return "To under 120 Kg"
      elif int(cal) < 400:
-          return "To 100 Kg"
+          return "To under 100 Kg"
      else:
-          return "To 80 Kg"
+          return "To under 80 Kg"
 
 
 
