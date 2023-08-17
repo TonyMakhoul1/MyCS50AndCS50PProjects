@@ -83,18 +83,11 @@ def main():
                     calories = check_calories(row["Calories"])
                     price = check_price(row["Price"])
                     callist.append({"Name": row["Name"], "Description": calories, "Cost":price})
-
-                    #prilist.append(price)
                 if callist == []:
                     sys.exit("You Didn't Order Anything")
-
                 print("This Is Your Order, Thank you!")
                 print(tabulate(callist, headers = "keys", tablefmt="grid"))
-                #print(callist)
-                #print(prilist)
                 sys.exit(1)
-
-
 
 def check_cmd():
     if len(sys.argv) < 2:
