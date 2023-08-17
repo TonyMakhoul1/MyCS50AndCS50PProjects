@@ -79,8 +79,9 @@ def main():
                     callist.append({"Name":name, "Description": calories, "Cost":price})
 
                     #prilist.append(price)
+                if callist not == None:
 
-                print(tabulate(callist[1:], headers = callist[0], tablefmt="grid"))
+                    print(tabulate(callist[1:], headers = callist[0], tablefmt="grid"))
                 #print(callist)
                 #print(prilist)
 
