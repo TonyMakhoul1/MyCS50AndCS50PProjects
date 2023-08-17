@@ -80,7 +80,7 @@ def main():
                 for row in addinglist:
                     calories = check_calories(row["Calories"])
                     price = check_price(row["Price"])
-                    callist.append({"Name": name, "Description": calories, "Cost":price})
+                    callist.append({"Name": row["Name"], "Description": calories, "Cost":price})
 
                     #prilist.append(price)
                 if callist == []:
