@@ -80,7 +80,8 @@ def main():
 
                     #prilist.append(price)
 
-                print(callist)
+                print(tabulate(callist[1:], headers = callist[0], tablefmt="grid"))
+                #print(callist)
                 #print(prilist)
 
 
