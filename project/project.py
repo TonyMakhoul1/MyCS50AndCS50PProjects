@@ -72,7 +72,7 @@ def main():
 
             if Option == 4:
 
-                for row in list:
+                for row in addinglist:
                     calories = check_calories(row["Calories"])
                     callist.append(calories)
                     price = check_price(row["Price"])
