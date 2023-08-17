@@ -95,13 +95,13 @@ def main():
 
 
 def check_cmd():
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 2:
         print("Too few arguments")
         sys.exit(1)
-    if len(sys.argv) > 3:
+    if len(sys.argv) > 2:
         print("Too many arguments")
         sys.exit(1)
-    if ".csv" not in (sys.argv[1] and sys.argv[2]):
+    if ".csv" not in sys.argv[1]:
         print("Not csv file")
         sys.exit(1)
 
