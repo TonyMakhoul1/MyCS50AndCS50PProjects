@@ -18,8 +18,8 @@ def main():
         while True:
             print("""
                     1)       Menu
-                    2)       Add your meal
-                    3)       cancel a meal
+                    2)       Adding a meal
+                    3)       canceling a meal
                     4)       exit
                   """)
 
