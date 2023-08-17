@@ -86,6 +86,7 @@ def main():
                 if callist == []:
                     sys.exit("You Didn't Order Anything")
 
+                print("This Is Your Order, Thank you!")
                 print(tabulate(callist, headers = "keys", tablefmt="grid"))
                 #print(callist)
                 #print(prilist)
